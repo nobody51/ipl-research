@@ -44,9 +44,16 @@ ilist = np.array(ilist)
 meanlist = np.array(meanlist)
 stdlist = np.array(stdlist)
 
-valuesmatrix = np.vstack((ilist,meanlist,stdlist)).T
-filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + '.csv'
-np.savetxt(filename, valuesmatrix, delimiter = ',')
+#valuesmatrix = np.vstack((ilist,meanlist,stdlist)).T
+filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + '.txt'
+#np.savetxt(filename, valuesmatrix, delimiter = ',')
+
+with open(filename,'w') as f:
+    lis=[ilist,meanlist,stdlist]
+    for x in zip(*lis):
+        f.write("{0}\t{1}\t{2}\n".format(*x))
+
+
                    
 plt.title('b = ' + str(bCtoS) + ', beta = ' + str(beta))
 plt.xlabel('a * alpha')
