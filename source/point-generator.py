@@ -13,14 +13,15 @@ import numpy as np
 #####Simulation Parameters#####
 N = 10
 M = 10
+startPop = 10
 time = 100
-t_1 = 3
+t_1 = 0
 aStoC = 1.0
 bCtoS = 0.8 
 alpha = 1
 beta = 10
 ###Point Generator Parameters###
-Trials = 10
+Trials = 50
 interval = 0.02
 ##############################
 
@@ -32,7 +33,7 @@ ilist = []
 for i in np.arange(0,1.0,interval):
     list_a = []
     for j in range(Trials):
-        list_a.append(app.app_sim(aStoC, bCtoS, i, beta, N, M, 0, time, t_1)[time-1]) #takes the last number from the appsim vector
+        list_a.append(app.app_sim(aStoC, bCtoS, i, beta, N, M, startPop, time, t_1)[time-1]) #takes the last number from the appsim vector
     mean = np.mean(np.array(list_a))
     std = np.std(np.array(list_a))  
     meanlist.append(mean)
@@ -55,7 +56,7 @@ with open(filename,'w') as f:
 
 
                    
-plt.title('b = ' + str(bCtoS) + ', beta = ' + str(beta))
+plt.title('b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', startPop = ' + str(startPop))
 plt.xlabel('a * alpha')
 plt.ylabel('n')
 plt.scatter(ilist,meanlist)
