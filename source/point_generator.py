@@ -38,16 +38,13 @@ def pointGen(aStoC, bCtoS, beta, N, M, startPop, time, t_1, Trials, interval):
         meanlist.append(mean)
         stdlist.append(std)
         ilist.append(i)
-    #    plt.scatter(i,mean, color='k')
-    
+
     ilist = np.array(ilist)
     meanlist = np.array(meanlist)
     stdlist = np.array(stdlist)
     
-    #valuesmatrix = np.vstack((ilist,meanlist,stdlist)).T
-    filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', startPop = ' + str(startPop) + '.txt'
-    #np.savetxt(filename, valuesmatrix, delimiter = ',')
-    
+    #writes ilist,meanlist, and stdlist into a txt file
+    filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', startPop = ' + str(startPop) + '.txt'    
     with open(filename,'w') as f:
         lis=[ilist,meanlist,stdlist]
         for x in zip(*lis):
@@ -56,10 +53,4 @@ def pointGen(aStoC, bCtoS, beta, N, M, startPop, time, t_1, Trials, interval):
     return (ilist,meanlist,stdlist)
 
 
-x = pointGen(aStoC, bCtoS, beta, N, M, startPop, time, t_1, Trials, interval)             
-plt.title('b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', startPop = ' + str(startPop))
-plt.xlabel('a * alpha')
-plt.ylabel('n')
-plt.scatter(x[0],x[1])
-plt.show()
 
