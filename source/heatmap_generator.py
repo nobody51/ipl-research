@@ -8,6 +8,9 @@ Created on Fri Sep  8 19:14:50 2017
 import applause_functions as app
 import matplotlib.pyplot as plt
 import numpy as np
+import time as t
+
+speed = t.clock()
 
 N = 10
 M = 10
@@ -19,9 +22,9 @@ bCtoS = 0.8
 alpha = 1
 beta = 10
 
-x = 5
-y = 5
-z = 10
+x = 11
+y = 11
+z = 100
 
 #a = app.app_sim(aStoC, bCtoS, alpha, beta, N, M, startPop, time, t_1)
 
@@ -30,7 +33,8 @@ def probFilter(a): #converts all non-zero values in a list to 1
         if a[q] != 0:
             a[q] = 1
 
-def lastList(abar, bCtoS, alpha, beta, N, M, start, time, t_1, iter): #runs app_sim N times and lists the last element per iteration
+def lastList(abar, bCtoS, alpha, beta, N, M, start, time, t_1, iter): 
+    #runs app_sim 'iter' times and lists the last element per iteration
     finalVal = []
     probVal = []
     for i in range(iter):
@@ -60,6 +64,7 @@ def heatData(bCtoS, beta, x, y, z):
             start[n] = (startRange[j])
             rawHeat[n] =(sum(k[1])/len(k[1]))
             n += 1
+            print(t.clock() - speed)
             
     #writes ilist,meanlist, and stdlist into a txt file
     filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', x = ' + str(x) + ', y = ' + str(y) + ', z = ' + str(z) + '.txt'    
@@ -68,7 +73,7 @@ def heatData(bCtoS, beta, x, y, z):
         for x in zip(*lis):
             f.write("{0}\t{1}\t{2}\n".format(*x))        
             
-    return abar,start,rawHeat
+    #return abar,start,rawHeat
     
         
 
