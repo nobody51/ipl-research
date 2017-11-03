@@ -41,9 +41,9 @@ def lastList(abar, bCtoS, alpha, beta, N, M, start, time, t_1, iter):
         x = app.app_sim(abar, bCtoS, alpha, beta, N, M, start, time, t_1)[-1]
         finalVal.append(x)
         if x==0:
-            probVal.append(0)
+            probVal.append(0.0)
         else:
-            probVal.append(1)
+            probVal.append(1.0)
     return finalVal, probVal
     
     

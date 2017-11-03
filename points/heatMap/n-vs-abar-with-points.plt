@@ -42,6 +42,7 @@ set key noautotitle
 
 set key at 0.2,100
 set title sprintf("b = %0.2f",bb) font "Times New Roman,26"
-
+#plot 'b = 0.8, beta = 10, x = 11, y = 11, z = 100.txt' with image
 plot [-(N-2):N-2][0:1][-5:105] 	abarf(t,bb,10),t lw 3 title '{/Symbol b}=10', \
 			     	t/N,0 lw 3 lt rgb "black"
+					#'b = 0.8, beta = 10, x = 11, y = 11, z = 100.txt' with image
