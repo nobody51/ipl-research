@@ -25,7 +25,7 @@ bf(n,abar,beta) = abar * (N-n) * ( N-1 + n*beta ) / (N-1.0) / (N-1.0)
 
 set parametric
 
-set samples 5000
+set samples 10000
 
 
 
