@@ -16,16 +16,16 @@ time = 500
 t_1 = 0
 C = 28
 aStoC = 1
-bCtoS = 0.3
-alpha = 0.8
-beta = 1
+bCtoS = 0.5
+alpha = 0.1
+beta = 10
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
 sim = app.app_sim(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1)
 plt.plot(sim)
-#ax.text(0.45*time,1,str(app.steady_nC(aStoC, bCtoS, alpha, beta, population, 1)), fontsize=20)
-ax.text(0.68*time,1,str(round(np.mean(sim),1))+'$\pm$'+str(round(np.std(sim),2)), fontsize=20)
+ax.text(0.45*time,1,str(app.steady_nC(aStoC, bCtoS, alpha, beta, population, 1)), fontsize=20)
+#ax.text(0.68*time,1,str(round(np.mean(sim),1))+'$\pm$'+str(round(np.std(sim),2)), fontsize=20)
 ax.text(80,100,'N = '+str(population), fontsize=15)
 plt.axhline(np.mean(sim), color = 'r')
 plt.axhline(app.steady_nC(aStoC, bCtoS, alpha, beta, population, 1), color = 'g')
