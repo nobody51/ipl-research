@@ -31,9 +31,49 @@ def lastList(abar, bCtoS, alpha, beta, N, M, start, time, t_1, iter):
     probVal = []
     for i in range(iter):
         x = app.app_sim(abar, bCtoS, alpha, beta, N, M, start, time, t_1)[-1]
-        y = app.steady_nC(abar, bCtoS, alpha, beta, N*M, 1)
         if x==0:
             probVal.append(0.0)
         else:
             probVal.append(1.0)
-    return finalVal, probVal
+    return probVal
+    
+def vectorData(bCtoS, beta, x, y, z):
+    abarRange = np.linspace(0,1,x)
+    startRange = np.linspace(0,100,y)  
+    
+    n = 0
+    
+    abar = np.zeros(len(abarRange)*len(startRange))
+    start = np.zeros(len(abarRange)*len(startRange))
+    dx = np.zeros(len(abarRange)*len(startRange))
+    dy = np.zeros(len(abarRange)*len(startRange))
+    #rawHeat = np.zeros(len(abarRange)*len(startRange))
+        
+    for i in range(len(abarRange)):
+        for j in range(len(startRange)):
+            k = lastList(abarRange[i], bCtoS, alpha, beta, N, M, startRange[j], time, t_1, z)
+            abar[n] = (abarRange[i])
+            start[n] = (startRange[j])
+            if sum(k)/len(k) >= 0.5:
+                dy[n] = max(startRange)/(y-1)
+            else:
+                dy[n] = -max(startRange)/(y-1)
+            n += 1
+            print(t.clock() - speed)
+            
+    #writes ilist,meanlist, and stdlist into a txt file
+    filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', x = ' + str(x) + ', y = ' + str(y) + ', z = ' + str(z) + '.txt'    
+    with open(filename,'w') as f:
+        lis=[abar,start,dx,dy]
+        for x in zip(*lis):
+            f.write("{0}\t{1}\t{2}\t{3}\n".format(*x))        
+            
+    #return abar,start,rawHeat    
+    
+
+    
+    
+    
+    
+    
+    
