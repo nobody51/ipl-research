@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time as t
 
-speed = t.clock()
+speed = t.time()
 
 N = 10
 M = 10
@@ -47,7 +47,7 @@ def vectorData(bCtoS, beta, x, y, z):
     start = np.zeros(len(abarRange)*len(startRange))
     dx = np.zeros(len(abarRange)*len(startRange))
     dy = np.zeros(len(abarRange)*len(startRange))
-    #rawHeat = np.zeros(len(abarRange)*len(startRange))
+    rawHeat = np.zeros(len(abarRange)*len(startRange))
         
     for i in range(len(abarRange)):
         for j in range(len(startRange)):
@@ -63,17 +63,19 @@ def vectorData(bCtoS, beta, x, y, z):
                     dy[n] = max(startRange)/(y-1)
             else:
                 dy[n] = -max(startRange)/(y-1)
+            rawHeat[n] = abs(sum(k)/len(k) - 0.5)/0.5
             n += 1
-            print(t.clock() - speed)
+            print(t.time() - speed)
             
+    #print(rawHeat)        
     #writes ilist,meanlist, and stdlist into a txt file
     filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', x = ' + str(x) + ', y = ' + str(y) + ', z = ' + str(z) + '.txt'    
     with open(filename,'w') as f:
-        lis=[abar,start,dx,dy]
+        lis=[abar,start,dx,dy,rawHeat]
         for x in zip(*lis):
-            f.write("{0}\t{1}\t{2}\t{3}\n".format(*x))        
+            f.write("{0}\t{1}\t{2}\t{3}\t{4}\n".format(*x))        
             
-    #return abar,start,rawHeat    
+    #return rawHeat    
     
 
     
