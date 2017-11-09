@@ -55,7 +55,12 @@ def vectorData(bCtoS, beta, x, y, z):
             abar[n] = (abarRange[i])
             start[n] = (startRange[j])
             if sum(k)/len(k) >= 0.5:
-                dy[n] = max(startRange)/(y-1)
+                if startRange[j] > np.floor(app.steady_nC(abarRange[i], bCtoS, alpha, beta, N*M, 1)):
+                    dy[n] = -max(startRange)/(y-1)
+                elif startRange[j] == np.floor(app.steady_nC(abarRange[i], bCtoS, alpha, beta, N*M, 1)):
+                    dy[n] = 0
+                else:
+                    dy[n] = max(startRange)/(y-1)
             else:
                 dy[n] = -max(startRange)/(y-1)
             n += 1

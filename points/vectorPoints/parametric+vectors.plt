@@ -21,7 +21,6 @@ bf(n,abar,beta) = abar * (N-n) * ( N-1 + n*beta ) / (N-1.0) / (N-1.0)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set xlabel "Parameter @^{/=30-}a" font "Times New Roman,24"
 set ylabel "State n_{c}" font "Times New Roman,24"
-set key at 0.6,100
 set title sprintf("b = %0.2f",bb) font "Times New Roman,26"
 
 set multiplot
@@ -29,10 +28,12 @@ set multiplot
 #set palette model XYZ rgbformulae 7,5,15
 set size 1,1
 set origin 0,0
-plot [0:1][-5:105] 'b = 0.8, beta = 10, x = 11, y = 11, z = 10.txt' using 1:2:3:4 with vectors head filled lt 2
+unset key
+plot [0:1][-5:105] 'b = 0.8, beta = 10, x = 11, y = 11, z = 10.txt' using 1:2:3:4 with vectors head filled lw 1
 
 set size 1,1
 set origin 0,0
+set key at 0.1,100
 set parametric
 set samples 5000
 beta0 = 1.0
