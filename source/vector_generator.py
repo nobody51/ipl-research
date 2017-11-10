@@ -66,8 +66,7 @@ def vectorData(bCtoS, beta, x, y, z):
             rawHeat[n] = abs(sum(k)/len(k) - 0.5)/0.5
             n += 1
             print(t.time() - speed)
-            
-    #print(rawHeat)        
+   
     #writes ilist,meanlist, and stdlist into a txt file
     filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', x = ' + str(x) + ', y = ' + str(y) + ', z = ' + str(z) + '.txt'    
     with open(filename,'w') as f:
@@ -75,8 +74,8 @@ def vectorData(bCtoS, beta, x, y, z):
         for x in zip(*lis):
             f.write("{0}\t{1}\t{2}\t{3}\t{4}\n".format(*x))        
             
-    #return rawHeat    
-    
+   
+
 
     
     

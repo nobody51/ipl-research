@@ -19,28 +19,28 @@ betaf(n,b,abar) = ( b*(N-1)/abar/(N-n) - 1.0 )*(N-1)/n
 
 bf(n,abar,beta) = abar * (N-n) * ( N-1 + n*beta ) / (N-1.0) / (N-1.0)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-beta0 = 10
-bb = 0.8
+beta0 = 100
+bb = 0.9
 
 set xlabel "Parameter @^{/=30-}a" font "Times New Roman,24"
 set ylabel "State n_{c}" font "Times New Roman,24"
 set title sprintf("b = %0.2f",bb) font "Times New Roman,26"
 set multiplot
 
-load 'ROY.plt'
+load 'plasma.plt'
 set palette positive
 set size 0.997,1
 set origin 0,0
 unset key
 set cbrange [0:1]
-plot [0:1][-5:105] 'b = 0.8, beta = 10, x = 11, y = 11, z = 100.txt' with vectors head filled lc palette
+plot [0:1][-5:105] 'b = 0.9, beta = 100, x = 21, y = 21, z = 500.txt' with vectors lw 3 lc palette
 
 set size 0.8867,1
 set origin 0,0
 set key at 0.13,100
 set parametric
 set samples 5000
-plot [-(N-2):N-2][0:1][-5:105] 	abarf(t,bb,beta0),t lw 3 lt rgb "blue" title '{/Symbol b}=10', \
+plot [-(N-2):N-2][0:1][-5:105] 	abarf(t,bb,beta0),t lw 3 lt rgb "blue" title '{/Symbol b}=100', \
 				t,0 lw 3 lt rgb "black" title 'trivial solution'
 								
 unset multiplot
