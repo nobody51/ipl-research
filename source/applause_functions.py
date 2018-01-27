@@ -1,5 +1,5 @@
 from random import random
-from numpy import zeros, sqrt, sum
+from numpy import zeros, sqrt, nan_to_num
 from math import isnan
 
 
@@ -15,6 +15,12 @@ def feedback_alpha(alpha, nC, population):
 def feedback_beta(beta, nC, population):
     return 1 / (1 + beta * nC / (population - 1))
     
+def feedback_space(system,system_row, M):
+    applause_state = [0]
+    for i in range(system_row):
+        applause_state.append(sum(system[i]))
+    return nan_to_num(sum(applause_state)/(system_row*M))
+
 def quad_eq(x,y,z,sign):
     return (-y + sign * (sqrt((y ** 2) - 4 * x * z))) / 2 * x
 
