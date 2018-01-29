@@ -67,6 +67,25 @@ def app_sim(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
                         AGENT[i,j] -= 1
     return graph
 
+#sim with spatial dependence    
+def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
+    population = N * M
+    AGENT = audience(N, M, C)
+    graph = []
+
+    for k in range(t):
+        nC = sum(AGENT) #number of people clapping
+        graph.append(nC)
+        for i in range(N):
+            for j in range(M):
+                if AGENT[i,j] == 0:
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(AGENT,i, M))):
+                        AGENT[i,j] += 1
+                else:
+                    if random() <= bCtoS * feedback_beta(beta, nC, population):
+                        AGENT[i,j] -= 1
+    return graph    
+    
 #graphs theoretical steady_state based on parameters    
 def steady_nC(aStoC, bCtoS, alpha, beta, population, sign):
     if beta == 0:
