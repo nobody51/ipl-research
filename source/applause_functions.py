@@ -1,5 +1,5 @@
 from random import random
-from numpy import zeros, sqrt, nan_to_num
+from numpy import zeros, sqrt, sum, nan_to_num
 from math import isnan
 
 #function that forces agents to go to state C
