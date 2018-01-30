@@ -20,16 +20,18 @@ time = 500
 t_1 = 1
 C = 0
 aStoC = 1
-bCtoS = 0.5
-alpha = 0.5
-beta = 1
+bCtoS = 0.2
+alpha = 1
+beta = 10
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-sim1 = app.app_sim(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1)
+#sim1 = app.app_sim(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1)
 sim2 = app.sim_space(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1)
-plt.plot(sim1, color='b')
+sim3 = app.sim_space2(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1)
+#plt.plot(sim1, color='b')
 plt.plot(sim2, color='r')
+plt.plot(sim3, color='g')
 
 ax.text(5,101,'N = '+str(population), fontsize=15)
 
