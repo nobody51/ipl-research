@@ -17,12 +17,12 @@ N = 10
 M = 10
 population = N * M
 time = 500
-t_1 = 0
-C = 1
+t_1 = 1
+C = 0
 aStoC = 1
-bCtoS = 0.1
-alpha = 0.1
-beta = 0.5
+bCtoS = 0.5
+alpha = 0.5
+beta = 1
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
@@ -31,7 +31,7 @@ sim2 = app.sim_space(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1)
 plt.plot(sim1, color='b')
 plt.plot(sim2, color='r')
 
-ax.text(80,100,'N = '+str(population), fontsize=15)
+ax.text(5,101,'N = '+str(population), fontsize=15)
 
 plt.title('$a = $'+str(aStoC)+' $b = $'+str(bCtoS)+r' $\alpha=$'+str(alpha)+r' $\beta=$'+str(beta),fontsize=20)
 plt.xlabel('Time',fontsize=18)
