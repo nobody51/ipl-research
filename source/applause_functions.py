@@ -23,6 +23,13 @@ def feedback_space(alpha,system,system_row, M):
     for i in range(system_row):
         applause_state.append(sum(system[i]))
     return alpha*nan_to_num(sum(applause_state)/(system_row*M))
+    
+#spatial-dependent feedack, '0 degrees'    
+def test(alpha,system,system_row, system_column):
+    applause_state = []
+    for i in range(system_row):
+        applause_state.append(sum(system[i,system_column]))
+    return alpha*nan_to_num(sum(applause_state)/len(applause_state))    
 
 #quadratic equation    
 def quad_eq(x,y,z,sign):
@@ -79,7 +86,25 @@ def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
         for i in range(N):
             for j in range(M):
                 if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha,AGENT,i, M))):
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha, AGENT, i, M))):
+                        AGENT[i,j] += 1
+                else:
+                    if random() <= bCtoS * feedback_beta(beta, nC, population):
+                        AGENT[i,j] -= 1
+    return graph
+
+def sim_space2(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
+    population = N * M
+    AGENT = audience(N, M, C)
+    graph = []
+
+    for k in range(t):
+        nC = sum(AGENT) #number of people clapping
+        graph.append(nC)
+        for i in range(N):
+            for j in range(M):
+                if AGENT[i,j] == 0:
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - test(alpha,AGENT,i, j))):
                         AGENT[i,j] += 1
                 else:
                     if random() <= bCtoS * feedback_beta(beta, nC, population):
