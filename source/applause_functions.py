@@ -18,11 +18,11 @@ def feedback_beta(beta, nC, population):
     return 1 / (1 + beta * nC / (population - 1))
     
 #spatial-dependent feedack, '180 degrees'    
-def feedback_space(system,system_row, M):
+def feedback_space(alpha,system,system_row, M):
     applause_state = [0]
     for i in range(system_row):
         applause_state.append(sum(system[i]))
-    return nan_to_num(sum(applause_state)/(system_row*M))
+    return alpha*nan_to_num(sum(applause_state)/(system_row*M))
 
 #quadratic equation    
 def quad_eq(x,y,z,sign):
@@ -79,7 +79,7 @@ def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
         for i in range(N):
             for j in range(M):
                 if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(AGENT,i, M))):
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha,AGENT,i, M))):
                         AGENT[i,j] += 1
                 else:
                     if random() <= bCtoS * feedback_beta(beta, nC, population):
