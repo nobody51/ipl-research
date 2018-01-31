@@ -16,19 +16,19 @@ def feedback_alpha(alpha, nC, population):
 #g'(beta)
 def feedback_beta(beta, nC, population):
     return 1 / (1 + beta * nC / (population - 1))
-    
-#spatial-dependent feedack, '180 degrees'    
-def feedback_space(alpha,system,system_row, M):
-    applause_state = [0]
-    for i in range(system_row):
-        applause_state.append(sum(system[i]))
-    return alpha*nan_to_num(sum(applause_state)/(system_row*M))
-    
-#spatial-dependent feedack, '0 degrees'    
-def test(alpha,system,system_row, system_column):
+       
+#spatial-dependent feedack, you can control the 'radius' of the reference agent    
+def feedback_space(alpha,system,system_row, system_column, N, M, radius):
     applause_state = []
     for i in range(system_row):
+        radius_mech = 0
         applause_state.append(sum(system[i,system_column]))
+        while radius_mech != radius:
+            radius_mech += 1
+            if system_column + radius_mech < M:
+                applause_state.append(system[i,system_column + radius_mech])
+            if system_column - radius_mech > -1:
+                applause_state.append(system[i,system_column - radius_mech])
     return alpha*nan_to_num(sum(applause_state)/len(applause_state))    
 
 #quadratic equation    
@@ -75,7 +75,7 @@ def app_sim(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
     return graph
 
 #sim with spatial dependence    
-def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
+def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,radius):
     population = N * M
     AGENT = audience(N, M, C)
     graph = []
@@ -86,31 +86,13 @@ def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
         for i in range(N):
             for j in range(M):
                 if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha, AGENT, i, M))):
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha,AGENT,i, j, N, M, radius))):
                         AGENT[i,j] += 1
                 else:
                     if random() <= bCtoS * feedback_beta(beta, nC, population):
                         AGENT[i,j] -= 1
     return graph
-
-def sim_space2(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
-    population = N * M
-    AGENT = audience(N, M, C)
-    graph = []
-
-    for k in range(t):
-        nC = sum(AGENT) #number of people clapping
-        graph.append(nC)
-        for i in range(N):
-            for j in range(M):
-                if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - test(alpha,AGENT,i, j))):
-                        AGENT[i,j] += 1
-                else:
-                    if random() <= bCtoS * feedback_beta(beta, nC, population):
-                        AGENT[i,j] -= 1
-    return graph    
-    
+ 
 #graphs theoretical steady_state based on parameters    
 def steady_nC(aStoC, bCtoS, alpha, beta, population, sign):
     if beta == 0:
