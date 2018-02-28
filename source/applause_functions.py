@@ -75,7 +75,7 @@ def app_sim(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
     return graph
 
 #sim with spatial dependence    
-def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,radius):
+def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,radius,taper):
     population = N * M
     AGENT = audience(N, M, C)
     graph = []
@@ -86,7 +86,7 @@ def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,radius):
         for i in range(N):
             for j in range(M):
                 if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha,AGENT,i, j, N, M, radius))):
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha,AGENT,i, j, N, M, radius,taper))):
                         AGENT[i,j] += 1
                 else:
                     if random() <= bCtoS * feedback_beta(beta, nC, population):
