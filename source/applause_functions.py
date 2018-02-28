@@ -18,18 +18,18 @@ def feedback_beta(beta, nC, population):
     return 1 / (1 + beta * nC / (population - 1))
        
 #spatial-dependent feedack, you can control the 'radius' of the reference agent    
-def feedback_space(alpha,system,system_row, system_column, N, M, radius):
+def feedback_space(alpha,system,system_row, system_column, N, M, radius, taper):
     applause_state = []
     for i in range(system_row):
         radius_mech = 0
-        applause_state.append(sum(system[i,system_column]))
-        while radius_mech != radius:
+        applause_state.append(system[i,system_column])
+        while radius_mech != radius + taper*(system_row - i):
             radius_mech += 1
             if system_column + radius_mech < M:
                 applause_state.append(system[i,system_column + radius_mech])
             if system_column - radius_mech > -1:
                 applause_state.append(system[i,system_column - radius_mech])
-    return alpha*nan_to_num(sum(applause_state)/len(applause_state))    
+    return alpha*nan_to_num(sum(applause_state)/len(applause_state))   
 
 #quadratic equation    
 def quad_eq(x,y,z,sign):
