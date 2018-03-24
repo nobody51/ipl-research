@@ -17,7 +17,8 @@ def feedback_alpha(alpha, nC, population):
 def feedback_beta(beta, nC, population):
     return 1 / (1 + beta * nC / (population - 1))
        
-#spatial-dependent feedack, you can control the 'radius' of the reference agent    
+#spatial-dependent feedack, you can control the 'radius' of the reference agent
+#taper refers to how many to add at the ends;radius = 0 taper = 1 is '90deg'    
 def feedback_space(alpha,system,system_row, system_column, N, M, radius, taper):
     applause_state = []
     for i in range(system_row):
