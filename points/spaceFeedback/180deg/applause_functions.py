@@ -86,9 +86,12 @@ def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
     population = N * M
     AGENT = audience(N, M, C)
     graph = []
+    zeroCount = 0
 
     for k in range(t):
         nC = sum(AGENT) #number of people clapping
+        if nC == 0:
+            zeroCount += 1
         graph.append(nC)
         for i in range(N):
             for j in range(M):
@@ -98,6 +101,9 @@ def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
                 else:
                     if random() <= bCtoS * feedback_beta(beta, nC, population):
                         AGENT[i,j] -= 1
+        if zeroCount == 6:
+            break
+            return graph
     return graph
  
 #graphs theoretical steady_state based on parameters    

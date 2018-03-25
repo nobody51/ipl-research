@@ -44,7 +44,7 @@ for alpha_iter in range(2,10,1):
             appDurationTrials = [] #temporary holder of trials to be averaged   
             for j in range(trials): #simulates parameters and population TRAIL times
                 N = pop
-                sim = app.sim_space(aStoC, bCtoS_iter*0.1, alpha_iter*0.1, beta, N, N, C, t, t_1,N,0)
+                sim = app.sim_space(aStoC, bCtoS_iter*0.1, alpha_iter*0.1, beta, N, N, C, t, t_1)
                 appDurationTrials.append(indexFilter(0,sim,1,t))
                 print('Trial ' + str(j) + ' complete ')
         

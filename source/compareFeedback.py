@@ -14,14 +14,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
-N = 100
-M = 100
+N = 223
+M = 223
 population = N * M
 t = 60
 t_1 = 1
 C = 0
 aStoC = 1
-bCtoS = 0.5
+bCtoS = 0.8
 alpha = 1
 beta = 1
 
@@ -44,4 +44,5 @@ plt.ylabel('State'+r' $n_{c}$',fontsize=18)
 #plt.ylim(0,110)
 plt.savefig('sim2.png')
 plt.show()
+print(sim2)
 print(str(time.time() - start_time) + ' seconds')
