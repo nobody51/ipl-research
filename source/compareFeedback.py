@@ -14,14 +14,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
-N = 10
-M = 10
+N = 100
+M = 100
 population = N * M
-t = 500
+t = 60
 t_1 = 1
 C = 0
 aStoC = 1
-bCtoS = 0.9
+bCtoS = 0.5
 alpha = 1
 beta = 1
 
@@ -30,18 +30,18 @@ start_time = time.time()
 fig = plt.figure()
 ax = fig.add_subplot(111)
 #sim1 = app.app_sim(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1)
-sim2 = app.sim_space(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1,M,0)
-#sim3 = app.sim_space(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1,0)
+sim2 = app.sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,M,0)
+#sim3 = app.sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,0,1)
 #plt.plot(sim1, color='b')
 plt.plot(sim2, color='r')
 #plt.plot(sim3, color='g')
 
-ax.text(5,5,'N = '+str(population), fontsize=15)
+ax.text(1,5,'N = '+str(population), fontsize=15)
 
 plt.title('$a = $'+str(aStoC)+' $b = $'+str(bCtoS)+r' $\alpha=$'+str(alpha)+r' $\beta=$'+str(beta),fontsize=20)
 plt.xlabel('Time',fontsize=18)
 plt.ylabel('State'+r' $n_{c}$',fontsize=18)
 #plt.ylim(0,110)
-#plt.savefig('sim2.png')
+plt.savefig('sim2.png')
 plt.show()
 print(str(time.time() - start_time) + ' seconds')
