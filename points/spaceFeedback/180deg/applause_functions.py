@@ -30,7 +30,13 @@ def feedback_space(alpha,system,system_row, system_column, N, M, radius, taper):
                 applause_state.append(system[i,system_column + radius_mech])
             if system_column - radius_mech > -1:
                 applause_state.append(system[i,system_column - radius_mech])
-    return alpha*nan_to_num(sum(applause_state)/len(applause_state))   
+    return alpha*nan_to_num(sum(applause_state)/len(applause_state))
+    
+def feedback_180deg(alpha,system,system_row, M): #reverted to simpler feedback space functions since runs took too long
+    applause_state = [0]
+    for i in range(system_row):
+        applause_state.append(sum(system[i]))
+    return alpha*nan_to_num(sum(applause_state)/(system_row*M))    
 
 #quadratic equation    
 def quad_eq(x,y,z,sign):
@@ -75,8 +81,8 @@ def app_sim(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
                         AGENT[i,j] -= 1
     return graph
 
-#sim with spatial dependence    
-def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,radius,taper):
+#sim with spatial dependence specific to 180 deg
+def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
     population = N * M
     AGENT = audience(N, M, C)
     graph = []
@@ -87,7 +93,7 @@ def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,radius,taper):
         for i in range(N):
             for j in range(M):
                 if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha,AGENT,i, j, N, M, radius,taper))):
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_180deg(alpha,AGENT,i, M))):
                         AGENT[i,j] += 1
                 else:
                     if random() <= bCtoS * feedback_beta(beta, nC, population):
