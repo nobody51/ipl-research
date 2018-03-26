@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import time
 
-N = 223
-M = 223
+N = 315
+M = 315
 population = N * M
 t = 60
 t_1 = 1

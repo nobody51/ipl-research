@@ -13,8 +13,8 @@ import time
 N = 10
 M = 10
 population = N * M
-t = 100
-t_1 = 5
+t = 60
+t_1 = 2
 C = 0
 aStoC = 1
 bCtoS = 0.8
@@ -23,7 +23,7 @@ beta = 1
 
 start_time = time.time()
 trials = 5
-popSet = [4,5,6,7,8,9,10,15,18,20,25,28,32,54,70,86,100]#,159,223,274,315] #set sqrt numbers that encompass the log scale
+popSet = [4,5,6,7,8,9,10,15,18,20,25,28,32,54,70,86,100,159]#,223,274,315] #set sqrt numbers that encompass the log scale
 
 #used to take the index for which SIM becomes 0; gets the applause duration
 def indexFilter(value,qlist,r1,r2):
@@ -32,8 +32,8 @@ def indexFilter(value,qlist,r1,r2):
     except ValueError:
         return 0
 
-for alpha_iter in range(2,10,1):
-    for bCtoS_iter in range(2,10,1):
+for alpha_iter in range(1,10,1):
+    for bCtoS_iter in range(1,10,1):
         
         #lists to be graphed
         duration = []
@@ -45,8 +45,13 @@ for alpha_iter in range(2,10,1):
             for j in range(trials): #simulates parameters and population TRAIL times
                 N = pop
                 sim = app.sim_space(aStoC, bCtoS_iter*0.1, alpha_iter*0.1, beta, N, N, C, t, t_1)
-                appDurationTrials.append(indexFilter(0,sim,1,t))
-                print('Trial ' + str(j) + ' complete ')
+                if indexFilter(0,sim,1,t) != 0:
+                    appDurationTrials.append(indexFilter(0,sim,1,t))
+                    print('Trial ' + str(j) + ' complete '  + str(time.strftime("%Y-%m-%d %H:%M:%S")))
+                else:
+                    appDurationTrials.append(indexFilter(0,sim,1,t))
+                    print('Trial ' + str(j) + ' reached non-zero steady state '  + str(time.strftime("%Y-%m-%d %H:%M:%S")))
+                    break
         
             duration.append(np.mean(appDurationTrials))
             durationSTD.append(np.std(appDurationTrials))
@@ -62,9 +67,9 @@ for alpha_iter in range(2,10,1):
         plt.title('$a = $'+str(aStoC)+' $b = $'+str(bCtoS_iter*0.1)+r' $\alpha=$'+str(alpha_iter*0.1)+r' $\beta=$'+str(beta),fontsize=20)
         plt.xlabel('Size',fontsize=18)
         plt.ylabel('Time',fontsize=18)
-        #plt.savefig('a = '+str(aStoC)+' b = '+str(bCtoS_iter*0.1)+r' alpha='+str(alpha_iter*0.1)+r' beta='+str(beta)+'.png')
+        plt.savefig('a = '+str(aStoC)+' b = '+str(bCtoS_iter*0.1)+r' alpha='+str(alpha_iter*0.1)+r' beta='+str(beta)+'.png')
         plt.show()
         print(str(time.time() - start_time) + ' seconds; ' + str(time.strftime("%Y-%m-%d %H:%M:%S")))
-        
+  
 
 
