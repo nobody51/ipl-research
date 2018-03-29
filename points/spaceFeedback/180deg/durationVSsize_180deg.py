@@ -32,8 +32,8 @@ def indexFilter(value,qlist,r1,r2):
     except ValueError:
         return 0
 
-for alpha_iter in range(1,10,1):
-    for bCtoS_iter in range(1,10,1):
+for alpha_iter in range(8,11,1):
+    for bCtoS_iter in range(1,11,1):
         
         #lists to be graphed
         duration = []
@@ -64,10 +64,10 @@ for alpha_iter in range(1,10,1):
         x = population 
         y = duration 
         plt.errorbar(x, y, xerr=0, yerr=durationSTD, fmt='o') 
-        plt.title('$a = $'+str(aStoC)+' $b = $'+str(bCtoS_iter*0.1)+r' $\alpha=$'+str(alpha_iter*0.1)+r' $\beta=$'+str(beta),fontsize=20)
+        plt.title('$a = $'+str(aStoC)+' $b = $'+str(round(bCtoS_iter*0.1,1))+r' $\alpha=$'+str(round(alpha_iter*0.1,1))+r' $\beta=$'+str(beta),fontsize=20)
         plt.xlabel('Size',fontsize=18)
         plt.ylabel('Time',fontsize=18)
-        plt.savefig('a = '+str(aStoC)+' b = '+str(bCtoS_iter*0.1)+r' alpha='+str(alpha_iter*0.1)+r' beta='+str(beta)+'.png')
+        plt.savefig('a = '+str(aStoC)+' b = '+str(round(bCtoS_iter*0.1,1))+r' alpha='+str(round(alpha_iter*0.1,1))+r' beta='+str(beta)+'.png')
         plt.show()
         print(str(time.time() - start_time) + ' seconds; ' + str(time.strftime("%Y-%m-%d %H:%M:%S")))
   
