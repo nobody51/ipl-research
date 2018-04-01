@@ -19,7 +19,7 @@ C = 0
 aStoC = 1
 bCtoS = 0.8
 alpha = 0.2
-beta = 1
+beta = 2
 
 start_time = time.time()
 trials = 5
@@ -33,7 +33,7 @@ def indexFilter(value,qlist,r1,r2):
         return 0
 
 for alpha_iter in range(8,11,1):
-    for bCtoS_iter in range(1,11,1):
+    for bCtoS_iter in range(5,11,1):
         
         #lists to be graphed
         duration = []
