@@ -1,0 +1,80 @@
+\chapter{Revival Time in Wave Packets in Perturbed Infinite Square Well Potentials}
+\label{chap2}
+\def\a{(n \pi p)}
+\def\aa{(\bar{n} \pi p)}
+\def\b{kpL}
+\def\c{k(1-p)L}
+\def\s{\\sin{(\bar{n}\pi p)}}
+\def\c{\\cos{(\bar{n}\pi p)}}
+\def\statepsi{\mid \psi \; \rangle}
+\def\energy{\mid E_{\vec{k}} \; \rangle}
+\def\psixt{\mid \psi(x,t) \; \rangle}
+\def\statepsixtrev{\mid \psi(x,t=T_{rev}) \; \rangle}
+\def\statepsixt0{\mid \psi(x,t=0) \; \rangle}
+\def\lowering{S^-_l \mid 0 \; \rangle}
+\def\loweringa{S^-_m \; S^-_l \mid 0 \; \rangle}
+
+%\hspace{\parindent} this forces the indentation of the first paragraph.
+
+
+\hspace{\parindent} In this chapter, we will calculate approximate analytical revival time expressions for wave packets excited in infinite square wells perturbed by symmetric Dirac-$\delta$ potentials 
+%\newpage You may force the appearance of new page
+
+\section{Wave Packet Revival Phenomena}
+\label{wavebg}
+
+\hspace{\parindent} We begin by supposing that we have an initial wave packet given by
+\begin{equation}
+ \statepsi = \sum_{k=1}^\infty a_{\vec{k}} \energy
+\end{equation}
+where $a_{\vec{k}}$ are the expansion coefficients and $\energy$ denotes the energy eigenfunctions.
+
+This wave packet evolves in time according to
+\begin{equation}
+\psixt = \sum_{k=1}^\infty a_{\vec{k}}  e^{-iHt/\hbar} \energy
+\end{equation}
+where $H$ is the Hamiltonian of the system.
+
+We are interested in knowing if does it ever happen that at some revival time $T_{rev}$ we will have \cite{styer}
+\begin{equation}
+ \statepsixtrev \;\; \propto \;\;\;\; \statepsixt0 . \;\;\; \end{equation}
+
+The definition of the revival time $T_{rev}$ is obtained from Robinett \cite{robinett}. An initially localized wave packet which exhibit behavior very similar to the classical evolution for short times (a few classical periods), will spread significantly after several classical periods, and then \lq \lq relocalize\rq \rq   later after a so-called quantum revival time. This wave packet is excited with an energy spectrum which is tightly spread around a large central value of the quantum number $\bar{n}$, so that $\bar{n} \gg \Delta n \gg 1$. We can therefore expand the individual energy eigenvalues, $E(n) \equiv E_n$, about this value, and obtain
+\begin{equation}
+E(n) \approx E(\bar{n}) + E^{\prime} (\bar{n})(n-\bar{n}) + \frac{1}{2}E^{\prime \prime} (\bar{n})(n-\bar{n})^2 + \frac{1}{6}E^{\prime \prime \prime} (\bar{n})(n-\bar{n})^3 + ...
+\end{equation}
+where $E^{\prime} (\bar{n}) = \frac{dE_n}{dn}\big|_{n=\bar{n}}$, $E^{\prime \prime} (\bar{n}) = \frac{dE^2_n}{dn^2}\big|_{n=\bar{n}}$, $E^{\prime \prime \prime} (\bar{n}) = \frac{dE^3_n}{dn^3}\big|_{n=\bar{n}}$ and so on.
+
+This gives the time-dependence of each individual quantum eigenstate through the factors
+\begin{align}
+e^{-iE_nt/\hbar} &= \exp\bigg[-\frac{i}{\hbar}\bigg(E(\bar{n})t + (n-\bar{n})E^{\prime}(\bar{n})t + \frac{1}{2}(n-\bar{n})^2E^{\prime\prime}(\bar{n})t \notag \\ & + \frac{1}{6}(n-\bar{n})^3E^{\prime\prime\prime}(\bar{n}) + ...\bigg)\bigg]
+\label{timedep}
+\end{align}
+
+We now write Eq.~(\ref{timedep}) in terms of the time scales,
+\begin{align}
+e^{-iE_nt/\hbar} &= \exp\bigg[-i\omega_0t - \frac{2\pi i (n-\bar{n}) t}{T_{cl}} - \frac{2\pi i (n-\bar{n})^2 t}{T_{rev}} - \frac{2\pi i (n-\bar{n})^3 t}{T_{super}} + ...\bigg]
+\end{align}
+where each term in the expansion defines
+\begin{equation}
+\omega_0 = \frac{E(\bar{n})}{\hbar}
+\end{equation}
+\begin{equation}
+T_{cl} = \frac{2\pi \hbar}{|E^{\prime} (\bar{n})|}
+\label{eq:timesclass}
+\end{equation}
+\begin{equation}
+T_{rev} = \frac{2\pi \hbar}{\frac{|E^{\prime \prime} (\bar{n})|}{2}} = \frac{4 \pi \hbar}{|E^{\prime \prime} (\bar{n})|}
+\label{eq:timesrev}
+\end{equation}
+\begin{equation}
+T_{super} = \frac{2\pi \hbar}{\frac{|E^{\prime \prime \prime} (\bar{n})|}{6}} = \frac{12 \pi \hbar}{|E^{\prime \prime \prime} (\bar{n})|}.
+\end{equation}
+
+One of the widely known model systems for quantum wave packet revivals is the infinite square well \cite{vugalter,tc,styer}. It is known that wave packet evolution in infinite square well systems exhibit perfect revival. An initially localized wave packet in an infinite square well system will evolve and spread significantly through time, and then return to its initial state later after a so-called quantum revival time. The work of Timberlake and Camp \cite{tc} has shown that the wave packet in the asymmetric infinite square well does not undergo perfect revivals. With one exception \cite{tc}, these studies do not tell us much about the effect of perturbing the well by a symmetric potential to the wave packet evolution in systems.
+
+In the following subsections we consider a particle of mass $m$ moving in an infinite square well of width $L$. This system has energy eigenvalues
+\begin{equation}
+ H \energy = \frac{n^2 \pi^2 \hbar^2}{2mL^2} \energy \;\;\;,\;\; n = 1, 2, 3, ...
+\end{equation}
+

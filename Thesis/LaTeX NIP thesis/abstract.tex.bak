@@ -1,0 +1,16 @@
+\chapter*{Abstract}
+
+\hspace{\parindent}The revival time of wave packets and spin systems were investigated. The definition of the revival time associated with wave packet revivals was reviewed and the classical and revival time scales of a wave packet excited in single- and double-$\delta$-perturbed infinite square wells about a mean quantum number $\bar{n}$ were calculated via time-independent perturbation theory. The parallels between the time evolution of wave packets and low lying spin excitations were exploited. These were used to write revival time characteristics for spin waves in analogy with the established equations appropriate for wave packets. The Heisenberg Hamiltonian and its solutions were reviewed and the revival times for the 1D ferromagnetic and antiferromagnetic systems described by the Heisenberg Hamiltonian were calculated.
+
+We have shown that for both the single- and double-$\delta$-perturbed system, in the limit $p \rightarrow 1$, the energy quantization condition reduces to the allowed $k$ values for an unperturbed infinite square well.  The first term for the classical time scale and revival time scale in both $\delta$-perturbed systems correspond to the time scales of the unperturbed energy eigenvalue.
+
+We have shown that for the ferromagnetic chain, there were no revivals for $\langle k \rangle = \pm \frac{\pi}{2}$. For the antiferromagnetic chain, there were no revivals for $\langle k \rangle = 0$  and $\langle k \rangle = \pm \pi$. In both cases, we have shown that as the coupling constant increases, the revival time decreases.
+
+
+
+
+
+
+
+
+
