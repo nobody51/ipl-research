@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  3 APR 2018 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  5 APR 2018 01:33
 entering extended mode
 **./draft.tex
 (draft.tex
@@ -160,6 +160,31 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subca
+ption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\capti
+on.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\capti
+on3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count100
+)
+\c@subfigure=\count101
+\c@subtable=\count102
+)
 ("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp
 .sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
@@ -243,45 +268,77 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) (draft.aux (abstract.aux) (introduction.aux) (chapter2.aux) (chapter3.aux) (c
-hapter4.aux) (conclusionsAndRecommendations.aux))
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\list
+ings.sty"
+\lst@mode=\count103
+\lst@gtempboxa=\box28
+\lst@token=\toks26
+\lst@length=\count104
+\lst@currlwidth=\dimen121
+\lst@column=\count105
+\lst@pos=\count106
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count107
+\lst@lineno=\count108
+\lst@maxwidth=\dimen124
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstm
+isc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count109
+\lst@skipnumbers=\count110
+\lst@framebox=\box29
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\list
+ings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (draft.aux (abstract.aux) (introduction.aux) (chapter2.aux)
+(chapter3.aux
+
+LaTeX Warning: Label `fig:compareSingleSS' multiply defined.
+
+) (chapter4.aux) (conclusionsAndRecommendations.aux))
 \openout1 = `draft.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
 
 ("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.f
 d"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 27.
 
 ("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-p
 df.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
-\scratchdimen=\dimen114
-\scratchbox=\box28
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count103
-\MPscratchDim=\dimen115
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count111
+\scratchdimen=\dimen125
+\scratchbox=\box30
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen126
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks28
 )
 ("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epst
 opdf-base.sty"
@@ -346,6 +403,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count117
+
 Generating Listings...
 Generating title page...
 UNDERGRADUATE options selected...
@@ -422,37 +484,94 @@ Package pdftex.def Info: images/chapter2/model2.png  used on input line 32.
 LaTeX Warning: Citation `michaelisconstant' on page 8 undefined on input line 7
 6.
 
-[8]) [9]
+[8]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 108.
+
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.f
+d"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 108.
+ [9] [10] [11] [12] [13] [14]
+<images/chapter2/simA.png, id=73, 433.62pt x 289.08pt>
+File: images/chapter2/simA.png Graphic file (type png)
+<use images/chapter2/simA.png>
+Package pdftex.def Info: images/chapter2/simA.png  used on input line 237.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter2/simB.png, id=74, 433.62pt x 289.08pt>
+File: images/chapter2/simB.png Graphic file (type png)
+<use images/chapter2/simB.png>
+Package pdftex.def Info: images/chapter2/simB.png  used on input line 241.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+) [15 <./images/chapter2/simA.png> <./images/chapter2/simB.png>]
 \openout2 = `chapter3.aux'.
 
  (chapter3.tex
 Chapter 3.
-
-LaTeX Warning: Reference `fig:system' on page 10 undefined on input line 24.
-
-[10
+[16
 
 
 
-] [11]
+]
+<images/chapter3/phaseSpace.png, id=85, 1371.1225pt x 652.4375pt>
+File: images/chapter3/phaseSpace.png Graphic file (type png)
+<use images/chapter3/phaseSpace.png>
+Package pdftex.def Info: images/chapter3/phaseSpace.png  used on input line 61.
 
-LaTeX Warning: Reference `fig:parametric' on page 12 undefined on input line 72
-.
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+ [17] [18 <./images/chapter3/phaseSpace.png>]
+<images/chapter3/ssA.png, id=93, 433.62pt x 289.08pt>
+File: images/chapter3/ssA.png Graphic file (type png)
+<use images/chapter3/ssA.png>
+Package pdftex.def Info: images/chapter3/ssA.png  used on input line 103.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter3/ssB.png, id=94, 433.62pt x 289.08pt>
+File: images/chapter3/ssB.png Graphic file (type png)
+<use images/chapter3/ssB.png>
+Package pdftex.def Info: images/chapter3/ssB.png  used on input line 107.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+
+Underfull \hbox (badness 2600) in paragraph at lines 109--109
+[]\OT1/cmr/m/n/10.95 (b) |A sim-u-la-tion with a triv-ial
+ []
 
 
-LaTeX Warning: Reference `fig:parametric' on page 12 undefined on input line 72
-.
+LaTeX Warning: Reference `fig:parametric' on page 19 undefined on input line 12
+1.
+
+[19 <./images/chapter3/ssA.png> <./images/chapter3/ssB.png>]
+<images/chapter3/phase+sim.png, id=101, 1371.1225pt x 652.4375pt>
+File: images/chapter3/phase+sim.png Graphic file (type png)
+<use images/chapter3/phase+sim.png>
+Package pdftex.def Info: images/chapter3/phase+sim.png  used on input line 125.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+ [20 <./images/chapter3/phase+sim.png>]
+<images/chapter3/unstable2.png, id=105, 1371.1225pt x 652.4375pt>
+File: images/chapter3/unstable2.png Graphic file (type png)
+<use images/chapter3/unstable2.png>
+Package pdftex.def Info: images/chapter3/unstable2.png  used on input line 145.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+<images/chapter3/unstable.png, id=106, 1371.1225pt x 652.4375pt>
+File: images/chapter3/unstable.png Graphic file (type png)
+<use images/chapter3/unstable.png>
+Package pdftex.def Info: images/chapter3/unstable.png  used on input line 149.
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
 
 
-LaTeX Warning: Reference `fig:parametric' on page 12 undefined on input line 77
-.
+LaTeX Warning: Reference `fig:unstable' on page 21 undefined on input line 157.
 
-[12]) [13]
+
+) [21] [22 <./images/chapter3/unstable2.png> <./images/chapter3/unstable.png>]
 \openout2 = `chapter4.aux'.
 
- (chapter4.tex
+
+(chapter4.tex
 Chapter 4.
-) [14
+) [23
 
 
 
@@ -461,7 +580,7 @@ Chapter 4.
 
  (conclusionsAndRecommendations.tex
 Chapter 5.
-) [15
+) [24
 
 
 
@@ -469,41 +588,49 @@ Chapter 5.
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ½ in font cmr12!
- [16
+ [25
 
 
-]) [17] (draft.aux (abstract.aux) (introduction.aux)
+]) [26] (draft.aux (abstract.aux) (introduction.aux)
 (chapter2.aux) (chapter3.aux) (chapter4.aux) (conclusionsAndRecommendations.aux
 ))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3128 strings out of 493303
- 45523 string characters out of 3127608
- 98989 words of memory out of 3000000
- 6575 multiletter control sequences out of 15000+200000
- 12074 words of font info for 46 fonts, out of 3000000 for 9000
+ 5498 strings out of 493303
+ 85140 string characters out of 3127608
+ 220331 words of memory out of 3000000
+ 8911 multiletter control sequences out of 15000+200000
+ 14065 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,25p,827b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Anton Cruz/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Anton Cruz/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/U
-sers/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr12.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr17.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Anton Cruz/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Anton 
-Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on draft.pdf (21 pages, 207538 bytes).
+ 42i,13n,41p,468b,1410s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Anton Cruz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\tcrm1200.pk><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Anton Cruz/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Use
+rs/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Anton Cruz/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Anton C
+ruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Anton Cruz/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y8.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmti12.pfb>
+Output written on draft.pdf (30 pages, 591421 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

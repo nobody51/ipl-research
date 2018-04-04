@@ -15,15 +15,13 @@
 \contentsline {subsection}{\numberline {2.2.2}Parameters}{7}
 \contentsline {subsection}{\numberline {2.2.3}Functions}{7}
 \contentsline {section}{\numberline {2.3}Simulation Alogrithm}{9}
-\contentsline {chapter}{\numberline {3}Steady-state dynamics of the audience applause}{10}
-\contentsline {section}{\numberline {3.1}Steady-state equation for different cases}{10}
-\contentsline {subsection}{\numberline {3.1.1}Case 1}{10}
-\contentsline {section}{\numberline {3.2}Phase space for varying parameters}{11}
-\contentsline {section}{\numberline {3.3}Simulation experiments}{11}
-\contentsline {subsection}{\numberline {3.3.1}Confirmation of model by simulation}{12}
-\contentsline {subsection}{\numberline {3.3.2}Unstable points}{13}
-\contentsline {chapter}{\numberline {4}Incorporating Spatial Effects}{14}
-\contentsline {section}{\numberline {4.1}Real-life applause and the standing ovation effect}{14}
-\contentsline {section}{\numberline {4.2}Different configurations for field of vision}{14}
-\contentsline {chapter}{\numberline {5}Conclusions and Recommendations}{15}
-\contentsline {chapter}{Bibliography}{16}
+\contentsline {chapter}{\numberline {3}Steady-state dynamics of the audience applause}{16}
+\contentsline {section}{\numberline {3.1}Steady-state equation for different cases}{16}
+\contentsline {subsection}{\numberline {3.1.1}Critical Points}{18}
+\contentsline {section}{\numberline {3.2}Simulation experiments}{19}
+\contentsline {subsection}{\numberline {3.2.1}Unstable points}{21}
+\contentsline {chapter}{\numberline {4}Incorporating Spatial Effects}{23}
+\contentsline {section}{\numberline {4.1}Real-life applause and the standing ovation effect}{23}
+\contentsline {section}{\numberline {4.2}Different configurations for field of vision}{23}
+\contentsline {chapter}{\numberline {5}Conclusions and Recommendations}{24}
+\contentsline {chapter}{Bibliography}{25}
