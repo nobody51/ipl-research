@@ -17,42 +17,64 @@
 %\hspace{\parindent} this forces the indentation of the first paragraph.
 
 \section{The applause as a contagion}
-\hspace{\parindent} Previous studies have treated the applause as a contagion that spreads across the audience. Doing this allows the use of an SIR compartmental model to simulate the complex system.
-A more appropriate model would be an SIS model since this would account for the people who stop clapping but may do so again. 
+\hspace{\parindent} Modelling epidemics has been done in order to study the mechanisms by which diseases spread. This helps in predicting how fast and far the disease can spread in order to control and prevent future outbreaks. By treating the applause as a diseases that spreads in the audience, the same tools to model epidemics can be used to model the applause. (i think this should be in the intro)
 
 \section{Compartmental Model}
 \subsection{States}
-An SIS-like model is proposed where each agent in the system is either in state S (silent) or state C (clapping). State S replaces the susceptible state while state C replaces the infected state.
-The state of the system is given by the number of agents in each corresponding state, $\vec{n}\equiv(n_{c},n_{s})$.
-Since we assume that the total number of agents is fixed at $N = n_{c} + n_{s}$ such that $n_{s} = N-n_{c}$, $\vec{n}$ will be fully specified by $n_{c}$ alone.
+
+The proposed compartmental model separates the agents into two states, silent (S) and clapping (C). The silent state replaces the susceptible state while clapping state replaces the infected state. 
+Intuitively, agents in state S are audience members who are not clapping while agents in state C are audience members who are clapping.
+The number of agents in state S, given by $n_{s}$, and the number of agents in state C, given by $n_{c}$ dictate the state of the system, given by $\vec{n}$ where $\vec{n}\equiv(n_{c},n_{s})$.
+It is assumed that the total number of agents $N$ is fixed, where $N = n_{c} + n_{s}$ and $\vec{n}$ is fully specified by $n_{c}$ alone.
+
+\begin{figure}
+ \centering
+  \includegraphics[width=0.5\linewidth]{images/chapter2/model2.png}
+  \caption{The compartmental model of audience applause based on the SIS epidemic model. Shown is how the transitional probabilities and functions control how each agent switches between states.}
+  \label{fig:SCSmodel}
+\end{figure}
 
 \subsection{Parameters}
-The parameters $a$ and $b$ are the transition probabilities for the respective transitions:
+The parameters $a$ and $b$ are the transition parameters.
+They range from $0$ to $1$ to represent transitional probabilities.
+$a$ controls the transition probability from S to C and $b$ controls the transition probability from C to S.
+The respective probability transitions are given by ${R}_{1}$ and ${R}_{2}$ where
 \begin{eqnarray}
 \mathrm{R}_{1} &:& \mathrm{S} \overset{a}{\longrightarrow} \mathrm{C} \label{eq:r1} \\
 \mathrm{R}_{2} &:& \mathrm{C} \overset{b}{\longrightarrow} \mathrm{S}.\label{eq:r2}
 \end{eqnarray}
-The parameter $f$ is a function that forces the transition $\mathrm{R}_{1}$ for an indicated time interval such that when $f=0$, the system behaves freely.
-We assume that agents in state S may be encouraged by the agents already in state C to spontaneously undergo $\mathrm{R}_{1}$.
+
 
 \subsection{Functions}
-The function $f'$ incorporates this feedback mechanism parametrized by $\alpha$:
+An audience is initially silent until given a social cue to start clapping, such as the end of a performance. 
+This corresponds in the model to all agents starting in state S, and then forcing the agents to undergo $\mathrm{R}_{1}$.
+The function $f$ forces the transition ${R}_{1}$ for an indicated time interval.
+Once the $f$ expires, the system behaves freely and its agents may undergo various $\mathrm{R}_{1}$ and/or $\mathrm{R}_{2}$ transitions depending on the given parameters.
+
+
+Aside from social cues, audience members may start clapping simply because others are.
+The peer influence may cause agents unaffected by social cues to start clapping, or those who have already stopped clapping to clap again.
+This creates a feedback mechanism that initiates more people to clap if majority of the agents are clapping
+This corresponds in the model to the function $f'$.
+The function $f'$ incorporates this feedback mechanism and is parametrized by $\alpha$:
 \begin{equation}\label{eq:f'}
   f'(\alpha) = \alpha \frac{n_c}{N-1},
 \end{equation}
-where $0 \leq \alpha \leq 1$ for consistency with probabilistic interpretations.
-The probability for a spontaneous ${R}_{1}$ transition is directly proportional to around a fraction of the population in state C and $\alpha$. The denominator is set to $N-1$ because an agent cannot spontaneously influence itself; it is only influenced by the rest of the population.
+where $\alpha$ ranges from $0$ to $1$ for probabilistic interpretations.
+The probability for a spontaneous $\mathrm{R}_{1}$ transition is directly proportional to the fraction of the population in state C and $\alpha$. The denominator is set to $N-1$ because an agent cannot spontaneously influence itself; it is only influenced by the rest of the population.
 The function is more effective when there are more agents in state C.
 
-Another assumption is that the presence of a large applauding audience 
-%results to a kind of inhibition of 
-inhibits those already clapping to undergo $\mathrm{R}_{2}$.
-The factor $g'$ incorporates a modulation function for this inhibition and is parametrized by $\beta$: 
-%%
+Finally, audience members may contain their own bias towards a social event and may applaud longer or shorter depending on the bias.
+Also, the continuous applause of the majority can inhibit those who are clapping to stop clapping.
+This corresponds in the model to the function $g'$
+The factor $g'$ incorporates the inhibition as a modulation function and is parametrized by $\beta$: 
 \begin{equation}\label{eq:g'}
   g'(\beta) = \frac{1}{1 + \beta\;n_C /(N-1)}
 \end{equation}
-where $\beta \geq 0$. This equation is taken from the Michaelis-Menten equation, which aims to model enzyme kinetics\cite{michaelisconstant}.
+where $\beta \geq 0$, representing the bias.
+Higher $\beta$ translates to agents less likely to undergo transition $\mathrm{R}_{2}$ 
+The equation is taken from the Michaelis-Menten equation, which aims to model enzyme kinetics\cite{michaelisconstant}.
+
 This completes the differential equations for the reactions \eqref{eq:r1} and \eqref{eq:r2} as follows.
 \begin{eqnarray}
 \frac{d}{dt}n_{c} &=& a (f+f'-f'f) n_{s} - b g' n_{c}\label{eq:diff1} \\
