@@ -66,14 +66,14 @@ def heatData(bCtoS, beta, x, y, z):
             n += 1
             print(t.clock() - speed)
             
-    #writes ilist,meanlist, and stdlist into a txt file
+    
     filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', x = ' + str(x) + ', y = ' + str(y) + ', z = ' + str(z) + '.txt'    
     with open(filename,'w') as f:
         lis=[abar,start,rawHeat]
         for x in zip(*lis):
             f.write("{0}\t{1}\t{2}\n".format(*x))        
             
-    #return abar,start,rawHeat
+    return abar,start,rawHeat
     
         
 

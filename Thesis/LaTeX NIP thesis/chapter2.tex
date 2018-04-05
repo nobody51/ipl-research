@@ -1,22 +1,6 @@
 \chapter{Monte Carlo Compartmental Method}
 \label{chap2}
-\def\a{(n \pi p)}
-\def\aa{(\bar{n} \pi p)}
-\def\b{kpL}
-\def\c{k(1-p)L}
-\def\s{\\sin{(\bar{n}\pi p)}}
-\def\c{\\cos{(\bar{n}\pi p)}}
-\def\statepsi{\mid \psi \; \rangle}
-\def\energy{\mid E_{\vec{k}} \; \rangle}
-\def\psixt{\mid \psi(x,t) \; \rangle}
-\def\statepsixtrev{\mid \psi(x,t=T_{rev}) \; \rangle}
-\def\statepsixt0{\mid \psi(x,t=0) \; \rangle}
-\def\lowering{S^-_l \mid 0 \; \rangle}
-\def\loweringa{S^-_m \; S^-_l \mid 0 \; \rangle}
 
-%\hspace{\parindent} this forces the indentation of the first paragraph.
-
-\section{The applause as a contagion}
 \hspace{\parindent} Modelling epidemics has been done in order to study the mechanisms by which diseases spread. This helps in predicting how fast and far the disease can spread in order to control and prevent future outbreaks. By treating the applause as a diseases that spreads in the audience, the same tools to model epidemics can be used to model the applause. (i think this should be in the intro)
 
 \section{Compartmental Model}
@@ -24,13 +8,13 @@
 
 The proposed compartmental model separates the agents into two states, silent (S) and clapping (C). The silent state replaces the susceptible state while clapping state replaces the infected state. 
 Intuitively, agents in state S are audience members who are not clapping while agents in state C are audience members who are clapping.
-The number of agents in state S, given by $n_{s}$, and the number of agents in state C, given by $n_{c}$ dictate the state of the system, given by $\vec{n}$ where $\vec{n}\equiv(n_{c},n_{s})$.
+The number of agents in state S, given by $n_{s}$, and the number of agents in state C, given by $n_{c}$, dictate the state of the system, given by $\vec{n}$ where $\vec{n}\equiv(n_{c},n_{s})$.
 It is assumed that the total number of agents $N$ is fixed, where $N = n_{c} + n_{s}$ and $\vec{n}$ is fully specified by $n_{c}$ alone.
 
 \begin{figure}
  \centering
   \includegraphics[width=0.5\linewidth]{images/chapter2/model2.png}
-  \caption{The compartmental model of audience applause based on the SIS epidemic model. Shown is how the transitional probabilities and functions control how each agent switches between states.}
+  \caption{The compartmental model of audience applause based on the SIS epidemic model. Agents are either in state S or state C. Parameters $a$ and $b$ are the transitional probabilities. Functions $f$, $f'$, and $g'$ are further discussed.}
   \label{fig:SCSmodel}
 \end{figure}
 
@@ -48,14 +32,13 @@ The respective probability transitions are given by ${R}_{1}$ and ${R}_{2}$ wher
 \subsection{Functions}
 An audience is initially silent until given a social cue to start clapping, such as the end of a performance. 
 This corresponds in the model to all agents starting in state S, and then forcing the agents to undergo $\mathrm{R}_{1}$.
-The function $f$ forces the transition ${R}_{1}$ for an indicated time interval.
-Once the $f$ expires, the system behaves freely and its agents may undergo various $\mathrm{R}_{1}$ and/or $\mathrm{R}_{2}$ transitions depending on the given parameters.
+The function $f$ forces the transition ${R}_{1}$ for an indicated time interval, $\tau$, which is typically 2-3 seconds/iterations.
+Once $f$ expires, the system behaves freely and its agents may undergo various $\mathrm{R}_{1}$ and/or $\mathrm{R}_{2}$ transitions depending on the given parameters.
 
 
 Aside from social cues, audience members may start clapping simply because others are.
 The peer influence may cause agents unaffected by social cues to start clapping, or those who have already stopped clapping to clap again.
-This creates a feedback mechanism that initiates more people to clap if majority of the agents are clapping
-This corresponds in the model to the function $f'$.
+This creates a feedback mechanism that initiates more people to clap if majority of the agents are clapping corresponding in the model to the function $f'$.
 The function $f'$ incorporates this feedback mechanism and is parametrized by $\alpha$:
 \begin{equation}\label{eq:f'}
   f'(\alpha) = \alpha \frac{n_c}{N-1},
@@ -66,7 +49,7 @@ The function is more effective when there are more agents in state C.
 
 Finally, audience members may contain their own bias towards a social event and may applaud longer or shorter depending on the bias.
 Also, the continuous applause of the majority can inhibit those who are clapping to stop clapping.
-This corresponds in the model to the function $g'$
+This corresponds in the model to the function $g'$.
 The factor $g'$ incorporates the inhibition as a modulation function and is parametrized by $\beta$: 
 \begin{equation}\label{eq:g'}
   g'(\beta) = \frac{1}{1 + \beta\;n_C /(N-1)}
@@ -75,15 +58,18 @@ where $\beta \geq 0$, representing the bias.
 Higher $\beta$ translates to agents less likely to undergo transition $\mathrm{R}_{2}$ 
 The equation is taken from the Michaelis-Menten equation, which aims to model enzyme kinetics\cite{michaelisconstant}.
 
-This completes the differential equations for the reactions \eqref{eq:r1} and \eqref{eq:r2} as follows.
+This completes the differential equations for the reactions \eqref{eq:r1} and \eqref{eq:r2}:
 \begin{eqnarray}
 \frac{d}{dt}n_{c} &=& a (f+f'-f'f) n_{s} - b g' n_{c}\label{eq:diff1} \\
 \frac{d}{dt}n_{s} &=& b g' n_{c} - a (f+f'-f'f) n_{s}\label{eq:diff2}
 \end{eqnarray}
 These equations are consistent with the assumption that the total audience size is fixed, that is $dn_{c}/dt = -dn_{s}/dt$.
+The derivation for the combined probability of the functions f and f' is shown in appendix (\ref{apndx:simpleProb}.
+
+
 
 \section{Simulation Alogrithm}
-\hspace{\parindent} The compartmental SIS-like model confirmed by simulating the $\mathrm{R}_{1}$ and $\mathrm{R}_{2}$ process via an agent-based Monte Carlo method. For each iteration, every agent is assigned a random number that is compared to one of the transition probabilities:
+\hspace{\parindent} The compartmental SIS-like model is confirmed by simulating the $\mathrm{R}_{1}$ and $\mathrm{R}_{2}$ process via an agent-based Monte Carlo method. For each iteration, every agent is assigned a random number that is compared to one of the transition probabilities:
 
 \begin{eqnarray}
 P(\mathrm{R}_{1}) &&= a(f + f' - f'f) \label{eq:p(r1)} \\
@@ -94,142 +80,8 @@ Agents in state S undergo transition $\mathrm{R}_{1}$ with probability shown in 
 Agents in state C undergo transition $\mathrm{R}_{2}$ with probability shown in \ref{eq:p(r2)}.
 A uniform random number, $u$, where $u \in [0,1]$, is drawn from a random number generator and then compared to the corresponding probability $P$.
 If $u \leq P$, the appropriate transition is allowed to occur.
-Below is the code developed to simulate the audience applause.
+The code developed to simulate the audience applause is provided in the appendix (\ref{apndx:codelib}).
 
-
-\begin{lstlisting}
-
-from random import random
-from numpy import zeros, sqrt, sum, nan_to_num
-from math import isnan
-
-#function that forces agents to go to state C
-def force_func(t, end):
-    if t < end:
-        return 1
-    else:
-        return 0
-
-#f'(alpha); feedback based on the number of ppl already in state C; the more ppl in state C, the more ppl will clap
-def feedback_alpha(alpha, nC, population):
-    return alpha * nC / (population - 1)
-    
-#g'(beta)
-def feedback_beta(beta, nC, population):
-    return 1 / (1 + beta * nC / (population - 1))
-       
-#spatial-dependent feedack, you can control the 'radius' of the reference agent
-#taper refers to how many to add at the ends;radius = 0 taper = 1 is '90deg'    
-def feedback_space(alpha,system,system_row, system_column, N, M, radius, taper):
-    applause_state = []
-    for i in range(system_row):
-        radius_mech = 0
-        applause_state.append(system[i,system_column])
-        while radius_mech != radius + taper*(system_row - i):
-            radius_mech += 1
-            if system_column + radius_mech < M:
-                applause_state.append(system[i,system_column + radius_mech])
-            if system_column - radius_mech > -1:
-                applause_state.append(system[i,system_column - radius_mech])
-    return alpha*nan_to_num(sum(applause_state)/len(applause_state))
-    
-def feedback_180deg(alpha,system,system_row, M): #reverted to simpler feedback space functions since runs took too long
-    applause_state = [0]
-    for i in range(system_row):
-        applause_state.append(sum(system[i]))
-    return alpha*nan_to_num(sum(applause_state)/(system_row*M))    
-
-#quadratic equation    
-def quad_eq(x,y,z,sign):
-    return (-y + sign * (sqrt((y ** 2) - 4 * x * z))) / 2 * x
-
-#do i still need this??!?!
-def frange(start, stop, step):
-    i = start
-    while i < stop:
-        yield i
-        i += step
-   
-#creates 'network' of audience        
-def audience(N,M,C):
-    agents = zeros((N,M))
-    
-    for i in range(N):
-        for j in range(M):
-            if sum(agents) == C:
-                break
-            else:
-                agents[i][j]=1
-    
-    return agents
-
-#the actual simulator            
-def app_sim(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
-    population = N * M
-    AGENT = audience(N, M, C)
-    graph = []
-
-    for k in range(t):
-        nC = sum(AGENT) #number of people clapping
-        graph.append(nC)
-        for i in range(N):
-            for j in range(M):
-                if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_alpha(alpha, nC, population))):
-                        AGENT[i,j] += 1
-                else:
-                    if random() <= bCtoS * feedback_beta(beta, nC, population):
-                        AGENT[i,j] -= 1
-    return graph
-
-#sim with spatial dependence specific to 180 deg
-def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
-    population = N * M
-    AGENT = audience(N, M, C)
-    graph = []
-    zeroCount = 0
-
-    for k in range(t):
-        nC = sum(AGENT) #number of people clapping
-        if nC == 0:
-            zeroCount += 1
-        graph.append(nC)
-        for i in range(N):
-            for j in range(M):
-                if AGENT[i,j] == 0:
-                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_180deg(alpha,AGENT,i, M))):
-                        AGENT[i,j] += 1
-                else:
-                    if random() <= bCtoS * feedback_beta(beta, nC, population):
-                        AGENT[i,j] -= 1
-        if zeroCount == 6:
-            break
-            return graph
-    return graph
- 
-#graphs theoretical steady_state based on parameters    
-def steady_nC(aStoC, bCtoS, alpha, beta, population, sign):
-    if beta == 0:
-        if alpha == 0:
-            return (aStoC * population) / (aStoC+bCtoS)
-        else:
-            if sign == 1:
-                return population - (bCtoS * (population - 1)) / (aStoC * alpha)
-            else:
-                return 0
-    else:
-        if alpha == 0:
-            return 0
-        else:
-            if sign == 0:
-                return 0
-            else:
-                if isnan(quad_eq(1, ((population*aStoC*alpha*beta)-(population*aStoC*alpha)+(aStoC*alpha))/(-aStoC*alpha*beta), (((population**2)*aStoC*alpha) - (population*aStoC*alpha) - ((population**2)*bCtoS) + (2*population*bCtoS) - (bCtoS))/(-aStoC*alpha*beta), sign)) == True:
-                    return 0
-                else:
-                    return quad_eq(1, ((population*aStoC*alpha*beta)-(population*aStoC*alpha)+(aStoC*alpha))/(-aStoC*alpha*beta), (((population**2)*aStoC*alpha) - (population*aStoC*alpha) - ((population**2)*bCtoS) + (2*population*bCtoS) - (bCtoS))/(-aStoC*alpha*beta), sign)
-
-\end{lstlisting}
 \dimendef\prevdepth=0
 \begin{figure}[h!]
   \centering
@@ -250,7 +102,7 @@ def steady_nC(aStoC, bCtoS, alpha, beta, population, sign):
 
 
 The simulator outputs a graph of $n_{c}$ versus time, where time is defined to be each iteration.
-Examples of such simulations are shown in \ref{fig:simulations}.
+Examples of such simulations are shown in figure \ref{fig:simulations}.
 An emergent property of the system is that a certain set of parameters will simulate an audience applause that does not end.
 Even if such cases do not exist in real life, further investigation of the steady-state applause may unravel the complexity of the system.
 

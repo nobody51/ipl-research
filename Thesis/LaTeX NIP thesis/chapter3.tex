@@ -1,12 +1,5 @@
 \chapter{Steady-state dynamics of the audience applause}
 \label{chap3}
-\def\statepsi{\mid \psi \; \rangle}
-\def\energy{\mid E_{\vec{k}} \; \rangle}
-\def\psixt{\mid \psi(x,t) \; \rangle}
-\def\statepsixtrev{\mid \psi(x,t=T_{rev}) \; \rangle}
-\def\statepsixt0{\mid \psi(x,t=0) \; \rangle}
-\def\lowering{S^-_l \mid 0 \; \rangle}
-\def\loweringa{S^-_m \; S^-_l \mid 0 \; \rangle}
 
 \hspace{\parindent} A system is in steady-state when its behavior no longer changes in time. In the context of a real audience applause, the system rapidly spikes up in the number of people applauding, fluctuates, then slowly dies down till everyone stops clapping. This setup has the trivial steady-state of $0$.
 However, simulations have shown that there are parameters where the steady-state is not zero, corresponding to $n_{c}$ people clapping indefinitely.
@@ -16,34 +9,7 @@ The value can be calculated by equating either \eqref{eq:diff1} or \eqref{eq:dif
 
 \hspace{\parindent} The steady-state conditions are when the state $\vec{n}$ is fixed and when the forcing function expires. 
 This is when $d\vec{n}/dt = 0$ and when $f=0$.
-
-The derivation is as follows
-
-
-\begin{align}
-\frac{d}{dt}n_{c} & = 0\\
-a(f+f'-f'f)n_{s} - bg'n_{c} & = 0\\
-a(f+f'-f'f)n_{s} & = bg'n_{c} \\
-\end{align}
-
-Note: $N = n_{c} + n_{s}, n_{s} = N - n{c}$, and $f' = 0$.
-
-\begin{equation}
-af'(N - n{c}) = bg'n_{c} \\
-\label{eq:noFunc}
-\end{equation}
-
-Plugging in \eqref{eq:f'} and \eqref{eq:g'} to \eqref{eq:noFunc}:
-
-\begin{align}
-a(\alpha\frac{n_{c}}{N-1})(N - n_{c}) &= b(\frac{1}{1 + \frac{\beta n_{c}}{N-1}})(n_{c}) \\
-\frac{a\alpha (N - n_{c})}{N-1}n_{c} &= b\frac{N-1}{N-1+\beta n_{c}}n_{c} \\
-a\alpha (N - n_{c}) &= b\frac{(N-1)^2}{N-1+\beta n_{c}} \\
-a\alpha(N-n_{c})(N-1 + \beta n_{c}) & = b(N-1)^{2}
-\end{align}
-%
-
-
+The derivation is shown in the appendix (\ref{apndx:derivSS})
 Once these conditions are achieved, \eqref{eq:diff1} and \eqref{eq:diff2} are simplified to the steady-state equation for $n_c$:
 
 \begin{equation}\label{eq:steadystate}
@@ -52,9 +18,13 @@ Once these conditions are achieved, \eqref{eq:diff1} and \eqref{eq:diff2} are si
 
 where $\bar{a}\equiv a\alpha$. 
 The values of steady state $n_{c}$ may be solved for any given $\bar{a},b,$ and $\beta$.
-Parametrizing \eqref{eq:steadystate} to time gives the phases space plot for the given parameters $b$ and $\beta$, shown in  \ref{fig:phaseSpace}.
+Parametrizing \eqref{eq:steadystate} to time gives the phases space plot for the given parameters $b$ and $\beta$, shown in figure \ref{fig:phaseSpace}.
+The phase space plots for various $b$ values are shown in the appendix (\ref{apndx:phaseSpace})
 Though the trivial steady-state solution is not included in \eqref{eq:steadystate}, it has been included in the phase space.
+The coordinate ($\bar{a}$,$n_{c}$) on the curves represent the $n_{c}$ value for a given $\bar{a}$ value at the given $b$ and $\beta$ value, where $\beta$ is the color of the curve.
 Values below $0$ are extraneous since $n_{c}$ refers to the number of people clapping, which cannot be negative.
+This means that there are two possible steady-state values for $\beta \leq 1$, the trivial solution $0$, and the non-trivial solution found on the appropriate curve.
+On the other hand, there are three possible steady-state values for $\beta > 1$, the trivial solution $0$, and two non-trivial solutions found on the appropriate curve.
 
 \begin{figure}
  \centering
@@ -68,18 +38,17 @@ Values below $0$ are extraneous since $n_{c}$ refers to the number of people cla
 \subsection{Critical Points}
 
 From observing all phase space plots of various $b$ values, all $\beta$ curves intersect, along with the trivial solution, at a specific point.
-Setting $n_{c} = 0$ in \eqref{eq:steadystate} gives us the critical point of intersection, $\bar{a} = \bar{a}_{1}$:
+Setting $n_{c} = 0$ in \eqref{eq:steadystate} gives us this critical point of intersection, $\bar{a}_{1}$:
 
 \begin{equation}
 \bar{a}_{1} = \frac{b(N-1)}{N}
 \end{equation}
 
-which for $N\gg1$ results to the expected $\bar{a}_{1}\approx b$.
+which for $N\gg1$ results to the observed $\bar{a}_{1}\approx b$. Solution for the critical point is shown in the appendix (\ref{apndx:crita1}
 
-The non-trivial solution \eqref{eq:steadystate} is quadratic, which does not include the trivial solution.
+The non-trivial solution to the steady-state equation \eqref{eq:steadystate} is quadratic, which does not include the trivial solution.
 This results to two non-trivial $n_{c}$ solutions for a given $\bar{a}$.
-For $\beta\leq1$, the non-trivial steady-state solutions appear uniquely for $\bar{a}>\bar{a}_{1}$.
-The second $n_{c}$ value is negative and therefore, extraneous.
+For $\beta\leq1$, the non-trivial steady-state solutions appear uniquely for $\bar{a}>\bar{a}_{1}$ since the second $n_{c}$ value is negative and therefore, extraneous.
 However, when $\beta>1$, two non-trivial solutions appear between a new critical value of $\bar{a}=\bar{a}_{2}$, corresponding to the vertex of \eqref{eq:steadystate}, and $\bar{a}_{1}$.
 For $\bar{a}>\bar{a}_{1}$, the non-trivial steady-state solution appears uniquely once again, similar to $\beta\leq1$.
 The $\bar{a}_{2}$ is given by
@@ -89,6 +58,7 @@ The $\bar{a}_{2}$ is given by
 \end{equation}
 
 where $n_{c}^{*} \equiv [1+(\beta-1)N]/2\beta$.
+Derivation is shown in the appendix (\ref{apndx:crita1}
 This non-trivial solution however, is unstable upon substitution with $\ddot{\vec{n}}$ resulting to $\ddot{\vec{n}}<0$.
 Thus, the middle branch in the range $\bar{a}\in(\bar{a}_{2},\bar{a}_{1})$ is an unstable steady-state.
 %For $\bar{a} \geq b$, $n_{c}$ has three solutions: the trivial solution $n_{c}=0$ and the two solutions provided by \eqref{eq:steadystate}.
@@ -96,8 +66,12 @@ Thus, the middle branch in the range $\bar{a}\in(\bar{a}_{2},\bar{a}_{1})$ is an
  
 \section{Simulation experiments}
 \hspace{\parindent} Analytical results are confirmed by simulation. The number of iterations, $t$, is set to be much greater than the duration of the forcing function,$\tau$.
+Figure~\ref{fig:compareSingleSS} shows sample simulations along with the analytical steady-state and the average of the system.
+The analytical steady-state is plotted in green while the mean is plotted in red.
+As observed, the simulation closely resembles the analytical value. The system settles to its steady-state very early in the simulation.
+It can be safely assumed that the $n_{c}$ values at $t \gg \tau$ are equivalent to $n_{c}$ for $t \rightarrow \infty$.
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{images/chapter3/ssA.png}
@@ -112,15 +86,12 @@ Thus, the middle branch in the range $\bar{a}\in(\bar{a}_{2},\bar{a}_{1})$ is an
   \label{fig:compareSingleSS}
 \end{figure}
 
-Figure~\ref{fig:compareSingleSS} shows sample simulations along with the analytical steady-state and the average of the system.
-The analytical steady-state is plotted in green while the mean is plotted in red.
-As observed, the simulation closely resembles the analytical value. The system settles to its steady-state very early in the simulation.
-It can be safely assumed that the $n_{c}$ values at $t \gg \tau$ are equivalent to $n_{c}$ for $t \rightarrow \infty$.
 $10$ sample runs were performed with different initial random number generator states and the final $n_{c}$ value for each iteration were recorded.
 The mean and standard deviation of the simulated steady-state values are then computed for each parameter space $(\bar{a},b,\beta)$. 
-The data points were then plotted with the corresponding parametrized differential curve shown in Fig.~\ref{fig:parametric}(c).
+The data points were then plotted with the corresponding parametrized differential curve shown in Fig.~\ref{fig:phase+sim}.
+All code used is provided in the appendix (\ref{apndx:steadstatesim}), as well as more simulation experiments for various $b$ values (\ref{apndx:ssexpt}
 
-\begin{figure}
+\begin{figure}[h!]
  \centering
   \includegraphics[width=\linewidth]{images/chapter3/phase+sim.png}
   \caption{The simulated steady-state values plotted against the analytic steady-state curves. The error bars provide the extent of deviation in simulations. The vertex is represented with the cross.}
@@ -138,33 +109,25 @@ The lower branch may share this instability.
 For the previous simulation experiments, all agents start at state S and then forced to transition to state C. 
 To investigate the properties of the lower branch on the non-trivial solution, we vary the number of agents that start the simulation in state C and remove the forcing function. 
 This allows us to determine where the system will settle given the specific starting $n_{c}$ value, more particularly for $n_{c}$ values near the lower branch of the non-trivial solution. 
+The code that generate the vector graphs is provided in the appendix (\ref{apndx:vectsim})
 
-\begin{figure}
-  \centering
-  \begin{subfigure}[b]{\linewidth}
-    \includegraphics[width=\linewidth]{images/chapter3/unstable2.png}
-    \caption{Vector graph for parameters $b = 0.8, \beta = 1$}
-  \end{subfigure}
-  \begin{subfigure}[b]{\linewidth}
-    \includegraphics[width=\linewidth]{images/chapter3/unstable.png}
-    %\label{fig:nonTrivSim}
-    \caption{Vector graph for parameters $b = 0.8, \beta = 0$.}
-  \end{subfigure}
-  \caption{The vector graph of the phase space plot. The origin of the vector represents the initial $n_{c}$ and corresponding $\bar{a}$ value. The direction it points reveals whether it settles to the trivial or non-trivial solution. The color represents the probability of settling towards the directed steady-state.}
-  \label{fig:compareSingleSS}
-\end{figure}
-
-Shown in figure \ref{fig:unstable} are the new phase space graphs that include arrows that point to where that $n{c}$ value for the given $\bar{a}$ settles.
+Shown in figure \ref{fig:compareSingleSS} are the new phase space graphs that include arrows that point to where that $n_{c}$ value for the given $\bar{a}$ settles.
+More vector graphs are available in the appendix (\ref{apndx:vectgraph}
 The color of the arrows represents the probability of going towards that direction.
-Intuitively for $\beta \leq 1$, all $nC$ values point towards the trivial solution for all $\bar{a}$ values less than  $\bar{a}_{1}$. 
-All $n{c}$ with $\bar{a}$ values greater than $\bar{a}_{1}$ point towards the non-trival solution.
+Intuitively for $\beta \leq 1$, all $n_{c}$ values point towards the trivial solution for all $\bar{a}$ values less than  $\bar{a}_{1}$. 
+All $n_{c}$ with $\bar{a}$ values greater than $\bar{a}_{1}$ point towards the non-trival solution.
 For $\beta > 1$, what differs is the behavior at the vertex and the lower branch of the non-trivial solution.
-$n{c}$ values above the vertex have an estimated 50\% to either settle at the vertex or zero, while $n{c}$ values below the vertex absolutely settle to zero.
+$n_{c}$ values above the vertex have an estimated 50\% to either settle at the vertex or zero, while $n_{c}$ values below the vertex absolutely settle to zero.
 Points slightly above the lower branch tend more towards settling to the upper branch but still have a chance to settle at 0.
 Likewise for points below the lower branch.
 Points within the lower branch have a 50\% of settling to either trivial or non trivial solution.
 
-
+\begin{figure}[h!]
+ \centering
+  \includegraphics[width=\linewidth]{images/appendix/vectors/4.png}
+  \caption{Vector graph for parameters $b = 0.8, \beta = 10$. The origin of the vector represents the initial $n_{c}$ and corresponding $\bar{a}$ value. The direction it points reveals whether it settles to the trivial or non-trivial solution. The color represents the probability of settling towards the directed steady-state.}
+  \label{fig:compareSingleSS}
+\end{figure}
 
 %%
 
