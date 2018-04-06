@@ -36,4 +36,5 @@
 \contentsline {section}{\numberline {A.9}Vector Graphs}{52}
 \contentsline {section}{\numberline {A.10}Simulations Spatial Effects}{54}
 \contentsline {section}{\numberline {A.11}Investigating Population Dependence}{59}
-\contentsline {chapter}{Bibliography}{62}
+\contentsline {section}{\numberline {A.12}Best fit parameter sets}{62}
+\contentsline {chapter}{Bibliography}{63}

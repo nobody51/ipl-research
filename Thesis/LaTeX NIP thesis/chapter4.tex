@@ -131,3 +131,28 @@ For simplicity, the system grid will always be a 2-dimensional lattice of equal 
 Also, the spatial configuration used will be '180 degrees'.
 The total population sample will be perfect squares ranging from $10^1$ to $10^4$.
 The code developed is provided in the appendix (\ref{apndx:popdep}).
+For this case, each iteration is considered  $1$ second.
+Five trials were performed per sample population.
+Due to insufferable run times, if a parameter set $(a,b,\alpha,\beta,N)$ returned a trial with applause duration greater than $60$ seconds, it is marked as $0$ seconds and no further trials are performed.
+This means that graphs with data points of $0$ seconds are to be disregarded.
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{images/chapter4/confirmA.png}
+    \caption{Simulated points showing population size dependence.}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.3\linewidth}
+    \includegraphics[width=\linewidth]{images/chapter4/4.png}
+    \caption{Real-life data points on population size dependence.}
+  \end{subfigure}
+  \caption{Comparing the simulated and actual graph of applause duration versus population size. Both increase linearly in the logarithmic scale.}
+  \label{fig:durXsizComp}
+\end{figure}
+
+Shown in figure \ref{fig:durXsizComp} is the parameter set $(a=1,b-0.7,\alpha=0.8,\beta=1)$ that best recreates the real-life applause. Similar parameter sets are shown in the appendix (\ref{apndx:fitset})
+Though this is the best fit parameter set, it still does not fully emulate the real-life applause.
+As seen, the data points for the real-life applause is more deviant compared to the simulation.
+The model may still be incomplete, or the data points for real-life applause is not enough.
+Further investigation is warranted, as well as an in-depth anaylsis on the new model.
+
