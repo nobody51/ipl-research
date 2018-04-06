@@ -81,6 +81,30 @@ def app_sim(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
                         AGENT[i,j] -= 1
     return graph
 
+def feed_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1,radius,taper):
+    population = N * M
+    AGENT = audience(N, M, C)
+    graph = []
+    zeroCount = 0
+
+    for k in range(t):
+        nC = sum(AGENT) #number of people clapping
+        if nC == 0:
+            zeroCount += 1
+        graph.append(nC)
+        for i in range(N):
+            for j in range(M):
+                if AGENT[i,j] == 0:
+                    if random() <= aStoC * (1 - (1-force_func(k, t_1)) * (1 - feedback_space(alpha,AGENT,i, j, N, M, radius, taper))):
+                        AGENT[i,j] += 1
+                else:
+                    if random() <= bCtoS * feedback_beta(beta, nC, population):
+                        AGENT[i,j] -= 1
+        if zeroCount == 6:
+            break
+            return graph
+    return graph
+
 #sim with spatial dependence specific to 180 deg
 def sim_space(aStoC, bCtoS, alpha, beta, N, M, C, t, t_1):
     population = N * M

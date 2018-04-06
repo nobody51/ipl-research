@@ -1,0 +1,32 @@
+\chapter{Introduction}
+
+\section{Background of the study}
+
+\hspace{\parindent} The quantal time development of wave packets in simple potentials has been a subject of interest since the dawn of quantum mechanics. The discussions by Schr\"{o}dinger and others on the connections between the classical and quantum descriptions of nature were made by showing explicit wave packet solutions to some familiar problems, including the cases of the harmonic oscillator and free-particle \cite{robinett}.
+
+The study of the wave packet evolution of quantum systems with simple potentials can cast light on both semi-classical features, which have obvious classical analogs, and quantum effects, which do not have obvious classical analogs. For example, an initially localized wave packet which exhibit behavior very similar to the classical evolution for short times, a few classical periods, will spread significantly after several classical periods, and then \lq \lq relocalize\rq \rq later after a so-called quantum revival time \cite{robinett}.
+
+Revivals are the universal features of the time evolution of quantum systems and they have been observed experimentally for atoms in optical lattices and Bose-Einstein condensates \cite{robinett}, for wave packets in Rydberg atoms, two-level atoms in cavities, and molecular wave packets in diatomic molecules \cite{beck}.
+
+Classical and quantum revival have been investigated previously in finite square wells \cite{as1,as2} and in the infinite square well (ISW) with an attractive $\delta$-potential in the middle of the well \cite{vugalter}. In these works, the revival times were obtained from a Taylor expansion of the eigenenergies about the mean quantum number $\bar{n}$. There is also an existing work on the ISW with $\delta$ functions using perturbative expansion \cite{bera} where the eigenvalues and eigenfunctions for the system were obtained. Another work on this system \cite{pedram} has obtained exact eigenvalues and eigenfunctions for the weak and strong coupling limits of the $\delta$-strength. The work of Timberlake and Camp \cite{tc} has shown that the wave packet in the asymmetric ISW does not undergo perfect revivals.
+
+With one exception, the work of Timberlake and Camp \cite{tc}, these studies do not tell us much about how perturbing the well by a symmetric potential affects the wave packet evolution in systems, including the explicit revival time expressions.
+
+\section{Spin Wave Revival}
+
+\hspace{\parindent} The time evolution of wave packets and low lying spin excitations have a parallel structure. We exploit these parallels to write revival time characteristics for spin waves in analogy with the established equations appropriate for wave packets.
+
+Despite the high level of interest on spin systems in condensed matter physics, the revival times for such systems have never been investigated. These might be of significant value both for theoretical purpose and for possible application in spintronics in the future. This thesis hopes to fill that gap.
+
+\section{Overview of this thesis}
+
+\hspace{\parindent} This thesis is organized as follows: In Chapter \ref{chap2} we will review the definition of the revival time associated with the wave packet revival phenomena using a Taylor series expansion of the energies about a mean quantum number, following Robinett \cite{robinett}. In Section \ref{deltarevivalresults} we will present the obtained approximate analytical expressions for the revival times of wave packets excited in infinite square wells perturbed by single- and double- Dirac-$\delta$ potentials.
+
+In Chapter \ref{chap3}, we will review the Heisenberg Hamiltonian and its solutions, following Marder \cite{Marder} and Callaway \cite{Callaway}. In Section \ref{heisenbergmodelresults} we will show the calculated rrevival times for the 1D ferromagnetic and antiferromagnetic systems described by the Heisenberg Hamiltonian. The effect of the coupling constant to the revival time will also be investigated.
+
+The revival time calculations for wave packets in Dirac-$\delta$-perturbed infinite square well potentials and the analysis of revival time in spin wave systems are original contributions.
+
+The conclusions and recommendations will be presented in Chapter \ref{conclusions}.
+
+
+

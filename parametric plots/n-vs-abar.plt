@@ -33,7 +33,7 @@ set xlabel "Parameter @^{/=32-}a" font "Times New Roman,26"
 
 set ylabel "State n_{c}" font "Times New Roman,26"
 beta0 = 1.0
- bb = 0.5
+ bb = 1
 set key font ",19"
 #set label 1 sprintf("b = %0.2f",bb) at screen 0.5,0.25 font "Times New Roman,20"
 

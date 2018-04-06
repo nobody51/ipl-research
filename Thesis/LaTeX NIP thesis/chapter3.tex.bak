@@ -1,0 +1,198 @@
+\chapter{Revival Time in Spin Systems}
+\label{chap3}
+\def\statepsi{\mid \psi \; \rangle}
+\def\energy{\mid E_{\vec{k}} \; \rangle}
+\def\psixt{\mid \psi(x,t) \; \rangle}
+\def\statepsixtrev{\mid \psi(x,t=T_{rev}) \; \rangle}
+\def\statepsixt0{\mid \psi(x,t=0) \; \rangle}
+\def\lowering{S^-_l \mid 0 \; \rangle}
+\def\loweringa{S^-_m \; S^-_l \mid 0 \; \rangle}
+
+In this chapter we will review the Heisenberg Hamiltonian and its solutions, following the discussion of Marder\cite{Marder} and Callaway\cite{Callaway}. Then, we will calculate the revival times for the 1D ferromagnetic and antiferromagnetic systems described by the Heisenberg Hamiltonian.
+
+\section{The Heisenberg Hamiltonian and its Solutions}
+
+\hspace{\parindent} In this section we follow the discussion of Marder\cite{Marder} and Callaway\cite{Callaway}.
+
+The calculation done by Heitler and London \cite{heitler} has revealed the emergence of magnetic ordering by considering only the Coulomb interaction and Fermi statistics of electrons. The full Hamiltonian for the two-electron system is
+\begin{equation}
+	\begin{split}
+H &= \frac{P_1^2}{2m} - \frac{e^2}{|\vec{r}_1 - \vec{R}_1|} +  \frac{P_2^2}{2m} - \frac{e^2}{|\vec{r}_2 - \vec{R}_2|} \\
+& + \frac{e^2}{|\vec{r}_1 - \vec{r}_2|} + \frac{e^2}{|\vec{R}_1 - \vec{R}_2|} - \frac{e^2}{|\vec{r}_1 - \vec{R}_2|} - \frac{e^2}{|\vec{r}_2 - \vec{R}_1|}
+	\end{split}
+\end{equation}
+where $P_1$ and $P_2$ are the electron 1 and 2 momentum respectively, $m$ is the mass of the electrons, $e$ is the electronic charge,  $\vec{r}_1$ and $\vec{r}_2$ are the electron 1 and 2 position vectors respectively and  $\vec{R}_1$ and $\vec{R}_2$ are the lattice site 1 and 2 vectors respectively.
+
+Because of this, one can recast the original Hamiltonian, acting only on spatial degrees of freedom, into a new Hamiltonian acting on the spin degrees of freedom. Dirac and Heisenberg were the first to show this new Hamiltonian
+\begin{equation}
+H = 2\varepsilon_0 + \frac{U -V}{1 - w^2} + \bigg(\frac{1}{4} - S_1 \cdot S_2\bigg) J
+\label{eq:spinhamiltonian}
+\end{equation}
+where $\varepsilon_0$ are the energies of each electron when the two electrons are infinitely separated, $U$, $V$ and $w$ are overlap integrals \cite{Marder}, $S_1$ and $S_2$ are the spins of electron 1 and 2 respectively and $J$ is the coupling constant.
+
+The Heisenberg Hamiltonian simply extends this to a system with large number of ions
+\begin{equation}
+H = - \sum_{\langle ll^{\prime} \rangle} J_{ll^{\prime}} S_l \cdot S_{l^{\prime}}
+\end{equation}
+where the sum over $\langle ll^{\prime} \rangle$ is a sum over distinct nearest neighbor pairs, $J_{ll'}$ is the coupling constant between spins at sites $l$ and $l'$, and $S_l$ and $S_l'$ are the spins at $l$ and $l'$ respectively.
+
+\subsection{Ground State of the Heisenberg Ferromagnet}
+
+\hspace{\parindent} Let us now calculate the ground state energy of the Heisenberg ferromagnet, following the discussion by Marder\cite{Marder} and Callaway\cite{Callaway}.
+
+We introduce
+\begin{equation}
+ S^{\pm} = S^x \pm i S^y
+\label{eq:spin}
+\end{equation}
+where $S$ is the spin operator, $S^+$ and $S^-$ are the raising and lowering operators respectively.
+
+
+Using the commutation relation for the operators,
+\begin{equation}
+[S_a^i,S_b^j] = i \delta_{ab} \varepsilon^{ijk} \hbar S_a^k
+\end{equation}
+where $a$ and $b$ are site indices, $i$,$j$,$k$ are the three-dimensional components of spin and $\varepsilon^{ijk}$ is the Levi-Civitta symbol.
+
+The following commutation relations can be shown to hold:
+\begin{equation}
+ [S_i^z, S_j^\pm] = \pm\delta_{ij} S_i^\pm
+\end{equation}
+\begin{equation}
+ [S_i^+, S_j^-] = 2\delta_{ij} S_i^z
+\end{equation}
+
+Now, consider the Heisenberg Hamiltonian given by
+\begin{equation}
+ H = -2\sum_{i>j} J_{ij} S_i \cdot S_j
+\end{equation}
+\begin{equation}
+H = -2\sum_{i>j} J_{ij} \bigg(S_i^x S_j^x + S_i^y S_j^y + S_i^z S_j^z\bigg).
+\label{eq:HH}
+\end{equation}
+
+In terms of the raising and lowering operators Eq.~(\ref{eq:spin}), Eq.~(\ref{eq:HH}) can be written as
+\begin{equation}
+H = -2\sum_{i>j} J_{ij} \bigg\{S_i^z S_j^z + S_i^- S_j^+ + \frac{1}{2} \bigg(S_i^+ S_j^- - S_i^- S_j^+ \bigg) \bigg\}.
+\end{equation}
+
+If we define
+\begin{equation}
+ J_{ii} \equiv 0
+\end{equation}
+that is, there is no spin self-interaction, then the sum can be extended over all sites $i$,$j$ without restriction
+\begin{equation}
+ H = -\sum_{i,j} J_{ij} (S_i^z S_j^z + S_i^- S_j^+).
+\label{eq:hworestrict}
+\end{equation}
+
+Next, consider the state of the coupled spins in which $S_j^z$ attains its maximum value $S$ so that
+\begin{equation}
+ S_j^z \mid 0 \; \rangle = S \mid 0 \; \rangle
+\end{equation}
+for all $j$. The energy of this state is
+\begin{equation}
+ H \mid 0 \; \rangle = E_0 \mid 0 \; \rangle
+\end{equation}
+where
+\begin{equation}
+ E_0 = -S^2 \sum_{i,j} J_{ij}.
+\end{equation}
+This is the ground state energy for the Heisenberg ferromagnet. Note that we have  not yet committed a specific orientation of the $z$-axis where the spins are aligned with. Furthermore, there are infinite possible directions at which the spins can align to form the ground state. Hence, the ground state of the Heisenberg  Hamiltonian is highly degenerate.
+
+\subsection{Spin Waves}
+
+\hspace{\parindent} In this subsection we will calculate the energy of the low lying excited states of the ferromagnet. We follow the discussion by Marder\cite{Marder} and Callaway\cite{Callaway}.
+
+The low lying excited states of the system consist of states in which few spins have deviated from the alignment of the completely ferromagnetic state.
+
+Let us consider a specific case of single spin deviation, and choose the ground state to have spins oriented upwards. We define a set of orthonormal states in which the spin at site $l$ has been lowered
+\begin{equation}
+ \mid l \; \rangle \equiv \frac{1}{(2S)^{1/2}} \lowering.
+\label{eq:lower}
+\end{equation}
+The dual states are
+\begin{equation}
+ \langle \; i \mid = \frac{1}{(2S)^{1/2}} \langle \; 0 \mid S_i^+.
+\end{equation}
+
+Let $\mid E \; \rangle$ be a low lying excited state eigenfunction of H with eigenvalue $E$
+\begin{equation}
+ H \mid E \; \rangle = E \mid E \; \rangle
+ \label{eq:he}
+\end{equation}
+which can be expanded in terms of the single spin-deviation states Eq.~(\ref{eq:lower}),
+\begin{equation}
+ \mid E \; \; \rangle = \sum_l \phi(\vec{R}_l) \mid l \; \; \rangle.
+ \label{eq:singlespin}
+\end{equation}
+
+To find an equation satisfied by the coefficients $\phi(\vec{R}_l)$, we substitute Eq.~(\ref{eq:singlespin}) into Eq.~(\ref{eq:he}) and take the inner product with another single spin-deviation state $\mid n \; \rangle$. The result is
+\begin{equation}
+ \sum_l \langle \; n \mid H \mid l \; \rangle \; \phi(\vec{R}_l) = E \phi(\vec{R}_n).
+ \label{eq:coeff}
+\end{equation}
+
+Using the Heisenberg Hamiltonian given by Eq.~(\ref{eq:hworestrict}) the first factor of the right hand side can be shown to be
+\begin{equation}
+ \langle \; n \mid H \mid l \; \rangle = -S^2 \delta_{nl} \sum_{i,j} J_{ij} - 2S \; (J_{nl} -\delta_{nl} \sum_j J_{nj}).
+\end{equation}
+Hence, Eq.~(\ref{eq:coeff}) takes the form
+\begin{equation}
+ 2S \sum_l \bigg\{ \bigg(\sum_j J_{lj}\bigg) \delta_{nl} - J_{nl} \bigg\} \phi(\vec{R}_l) = \epsilon(\vec{k}) \phi(\vec{R}_n)
+ \label{eq:coeff2}
+\end{equation}
+where $\vec{k}$ is a wave vector and
+\begin{equation}
+ \epsilon = E - E_0.
+\end{equation}
+
+Let us introduce the \textit{ansatz}
+\begin{equation}
+\phi(\vec{R}_l) \propto e^{i\vec{k}\cdot\vec{R}_l}
+\label{eq:ansatz}
+\end{equation}
+into Eq.~(\ref{eq:coeff2}) and note that the coupling constant is a function of the distance between sites $n$ and $l$,
+\begin{equation}
+ J_{nl} = J_{nl}(|\vec{R}_n - \vec{R}_l|)
+\end{equation}
+and we have
+\begin{equation}
+ 2S \sum_l \bigg\{ \bigg(\sum_j J_{lj}\bigg) \delta_{nl} - J_{nl} \bigg\} e^{i\vec{k}\cdot\vec{R}_l} = \epsilon(\vec{k}) e^{i\vec{k}\cdot\vec{R}_n}.
+\end{equation}
+
+Isolating $\epsilon (\vec{k})$ in the expression,
+\begin{equation}
+\epsilon(\vec{k}) = 2S \sum_l \bigg\{ \bigg(\sum_j J_{lj}\bigg) \delta_{nl} - J_{nl} \bigg\} e^{i\vec{k}\cdot(\vec{R}_l - \vec{R}_n)}
+\end{equation}
+and so the general dispersion relation is given by
+\begin{equation}
+\epsilon_n(\vec{k}) = 2S \sum_j J_{nj} - 2S \sum_l J_{nl} e^{i\vec{k}\cdot(\vec{R}_l - \vec{R}_n)}.
+\end{equation}
+
+For a crystal with central inversion symmetry, the dispersion relation becomes
+\begin{eqnarray}
+\epsilon(\vec{k}) = 2S \sum_l J(\vec{R}_l) \bigg\{1-e^{i\vec{k}\cdot\vec{R}_l} \bigg\}.
+\end{eqnarray}
+These solutions are wavelike, also called \textit{spin waves} or \textit{magnons}.
+
+\subsection{Spin Waves in Antiferromagnets}
+
+\hspace{\parindent} Let us now consider the case when the coupling constant $J$ is negative.
+In this case, the system can now have a lower magnetic moment when not in ferromagnetic state. The simplest case of this is the N\'{e}el state where the nearest neighbor spins are antiparallel.
+
+Let us assume that the lattice is bipartite. That is, we can divide the lattice into two sublattices A and B, such that the nearest neighbors of a lattice site in A all belong to B and vice versa as shown on Figure 3.1. In the figure, A is colored gray and B is colored white.
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.2]{Neel}
+			\caption[A bipartite lattice.]{A bipartite lattice. The lattice is divided into two sublattices A and B shown as gray and white circles respectively.The nearest neighbors of A belong to B and vice versa.}
+\end{figure}
+
+
+
+
+
+
+
+
+

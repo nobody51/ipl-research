@@ -1,0 +1,18 @@
+\contentsline {section}{\numberline {1}Applause Dynamics}{2}
+\contentsline {subsection}{\numberline {1.1}Nature of Applause}{2}
+\contentsline {subsection}{\numberline {1.2}Available Models}{2}
+\contentsline {subsection}{\numberline {1.3}Dynamics of applause}{2}
+\contentsline {section}{\numberline {2}Monte Carlo Compartmental Model}{2}
+\contentsline {subsection}{\numberline {2.1}The applause as a contagion}{2}
+\contentsline {subsection}{\numberline {2.2}Compartmental Model}{2}
+\contentsline {subsubsection}{\numberline {2.2.1}States and Parameters}{2}
+\contentsline {subsubsection}{\numberline {2.2.2}Functions}{2}
+\contentsline {subsection}{\numberline {2.3}Simulation Algorithm}{2}
+\contentsline {section}{\numberline {3}Steady-state dynamics}{2}
+\contentsline {subsection}{\numberline {3.1}Steady-state equation for different cases}{2}
+\contentsline {subsection}{\numberline {3.2}Phase space for varying parameters}{2}
+\contentsline {subsubsection}{\numberline {3.2.1}Confirmation of model by simulation}{2}
+\contentsline {subsubsection}{\numberline {3.2.2}Critical and unstable Points}{2}
+\contentsline {section}{\numberline {4}Incorporating Spatial Dependence}{2}
+\contentsline {subsection}{\numberline {4.1}Comparison with observed real-life applause}{2}
+\contentsline {subsection}{\numberline {4.2}Standing ovation effect}{2}
