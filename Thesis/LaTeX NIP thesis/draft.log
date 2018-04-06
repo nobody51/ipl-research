@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  5 APR 2018 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  6 APR 2018 19:25
 entering extended mode
 **./draft.tex
 (draft.tex
@@ -440,13 +440,13 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \tf@toc=\write3
 \openout3 = `draft.toc'.
 
- [3] (draft.lof)
+ [3] (draft.lof [4
+
+])
 \tf@lof=\write4
 \openout4 = `draft.lof'.
 
- [4
-
-]
+ [5]
 ...ignore overfull hbox(es) they should be minor errors..
 ...done generating listings.
 Starting to load main contents...
@@ -469,7 +469,7 @@ Chapter 1.
 
  (chapter2.tex
 Chapter 2.
-<images/chapter2/model2.png, id=39, 509.65407pt x 324.46219pt>
+<images/chapter2/model2.png, id=42, 509.65407pt x 324.46219pt>
 File: images/chapter2/model2.png Graphic file (type png)
 <use images/chapter2/model2.png>
 Package pdftex.def Info: images/chapter2/model2.png  used on input line 16.
@@ -484,12 +484,12 @@ LaTeX Warning: Citation `michaelisconstant' on page 8 undefined on input line 5
 9.
 
 [8]
-<images/chapter2/simA.png, id=53, 433.62pt x 289.08pt>
+<images/chapter2/simA.png, id=57, 433.62pt x 289.08pt>
 File: images/chapter2/simA.png Graphic file (type png)
 <use images/chapter2/simA.png>
 Package pdftex.def Info: images/chapter2/simA.png  used on input line 89.
 (pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
-<images/chapter2/simB.png, id=54, 433.62pt x 289.08pt>
+<images/chapter2/simB.png, id=58, 433.62pt x 289.08pt>
 File: images/chapter2/simB.png Graphic file (type png)
 <use images/chapter2/simB.png>
 Package pdftex.def Info: images/chapter2/simB.png  used on input line 93.
@@ -505,19 +505,19 @@ Chapter 3.
 
 
 ]
-<images/chapter3/phaseSpace.png, id=68, 1371.1225pt x 652.4375pt>
+<images/chapter3/phaseSpace.png, id=71, 1371.1225pt x 652.4375pt>
 File: images/chapter3/phaseSpace.png Graphic file (type png)
 <use images/chapter3/phaseSpace.png>
 Package pdftex.def Info: images/chapter3/phaseSpace.png  used on input line 31.
 
 (pdftex.def)             Requested size: 433.62pt x 206.33524pt.
  [12 <./images/chapter3/phaseSpace.png>]
-<images/chapter3/ssA.png, id=72, 433.62pt x 289.08pt>
+<images/chapter3/ssA.png, id=75, 433.62pt x 289.08pt>
 File: images/chapter3/ssA.png Graphic file (type png)
 <use images/chapter3/ssA.png>
 Package pdftex.def Info: images/chapter3/ssA.png  used on input line 77.
 (pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
-<images/chapter3/ssB.png, id=73, 433.62pt x 289.08pt>
+<images/chapter3/ssB.png, id=76, 433.62pt x 289.08pt>
 File: images/chapter3/ssB.png Graphic file (type png)
 <use images/chapter3/ssB.png>
 Package pdftex.def Info: images/chapter3/ssB.png  used on input line 81.
@@ -531,7 +531,7 @@ Underfull \hbox (badness 2600) in paragraph at lines 83--83
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13]
-<images/chapter3/phase+sim.png, id=77, 1371.1225pt x 652.4375pt>
+<images/chapter3/phase+sim.png, id=80, 1371.1225pt x 652.4375pt>
 File: images/chapter3/phase+sim.png Graphic file (type png)
 <use images/chapter3/phase+sim.png>
 Package pdftex.def Info: images/chapter3/phase+sim.png  used on input line 96.
@@ -542,7 +542,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./images/chapter3/ssA.png> <./images/chapter3/ssB.png>] [15 <./images/chap
 ter3/phase+sim.png>]
-<images/appendix/vectors/4.png, id=88, 1371.1225pt x 652.4375pt>
+<images/appendix/vectors/4.png, id=91, 1371.1225pt x 652.4375pt>
 File: images/appendix/vectors/4.png Graphic file (type png)
 <use images/appendix/vectors/4.png>
 Package pdftex.def Info: images/appendix/vectors/4.png  used on input line 127.
@@ -553,16 +553,109 @@ Package pdftex.def Info: images/appendix/vectors/4.png  used on input line 127.
 
  (chapter4.tex
 Chapter 4.
-) [17
+<images/chapter4/1.png, id=95, 433.62pt x 289.08pt>
+File: images/chapter4/1.png Graphic file (type png)
+<use images/chapter4/1.png>
+Package pdftex.def Info: images/chapter4/1.png  used on input line 20.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/2.png, id=96, 433.62pt x 289.08pt>
+File: images/chapter4/2.png Graphic file (type png)
+<use images/chapter4/2.png>
+Package pdftex.def Info: images/chapter4/2.png  used on input line 24.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/3.png, id=97, 433.62pt x 289.08pt>
+File: images/chapter4/3.png Graphic file (type png)
+<use images/chapter4/3.png>
+Package pdftex.def Info: images/chapter4/3.png  used on input line 28.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/4.png, id=98, 433.62pt x 289.08pt>
+File: images/chapter4/4.png Graphic file (type png)
+<use images/chapter4/4.png>
+Package pdftex.def Info: images/chapter4/4.png  used on input line 33.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17
 
 
 
 ]
+<images/chapter4/0deg.png, id=102, 481.8pt x 361.35pt>
+File: images/chapter4/0deg.png Graphic file (type png)
+<use images/chapter4/0deg.png>
+Package pdftex.def Info: images/chapter4/0deg.png  used on input line 56.
+(pdftex.def)             Requested size: 130.08731pt x 97.5658pt.
+<images/chapter4/90deg.png, id=103, 481.8pt x 361.35pt>
+File: images/chapter4/90deg.png Graphic file (type png)
+<use images/chapter4/90deg.png>
+Package pdftex.def Info: images/chapter4/90deg.png  used on input line 60.
+(pdftex.def)             Requested size: 130.08731pt x 97.5658pt.
+<images/chapter4/180deg.png, id=104, 481.8pt x 361.35pt>
+File: images/chapter4/180deg.png Graphic file (type png)
+<use images/chapter4/180deg.png>
+Package pdftex.def Info: images/chapter4/180deg.png  used on input line 64.
+(pdftex.def)             Requested size: 130.08731pt x 97.5658pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18 <./images/chapter4/1.png> <./images/chapter4/2.png> <./images/chapter4/3.pn
+g> <./images/chapter4/4.png>]
+<images/chapter4/feedback_sim4.png, id=112, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim4.png Graphic file (type png)
+<use images/chapter4/feedback_sim4.png>
+Package pdftex.def Info: images/chapter4/feedback_sim4.png  used on input line 
+81.
+(pdftex.def)             Requested size: 130.08731pt x 86.72466pt.
+<images/chapter4/feedback_sim5.png, id=113, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim5.png Graphic file (type png)
+<use images/chapter4/feedback_sim5.png>
+Package pdftex.def Info: images/chapter4/feedback_sim5.png  used on input line 
+85.
+(pdftex.def)             Requested size: 130.08731pt x 86.72466pt.
+<images/chapter4/feedback_sim6.png, id=114, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim6.png Graphic file (type png)
+<use images/chapter4/feedback_sim6.png>
+Package pdftex.def Info: images/chapter4/feedback_sim6.png  used on input line 
+89.
+(pdftex.def)             Requested size: 130.08731pt x 86.72466pt.
+<images/chapter4/feedback_sim3.png, id=115, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim3.png Graphic file (type png)
+<use images/chapter4/feedback_sim3.png>
+Package pdftex.def Info: images/chapter4/feedback_sim3.png  used on input line 
+94.
+(pdftex.def)             Requested size: 130.08731pt x 86.72466pt.
+<images/chapter4/feedback_sim2.png, id=116, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim2.png Graphic file (type png)
+<use images/chapter4/feedback_sim2.png>
+Package pdftex.def Info: images/chapter4/feedback_sim2.png  used on input line 
+99.
+(pdftex.def)             Requested size: 130.08731pt x 86.72466pt.
+<images/chapter4/feedback_sim7.png, id=117, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim7.png Graphic file (type png)
+<use images/chapter4/feedback_sim7.png>
+Package pdftex.def Info: images/chapter4/feedback_sim7.png  used on input line 
+104.
+(pdftex.def)             Requested size: 130.08731pt x 86.72466pt.
+
+Underfull \hbox (badness 1205) in paragraph at lines 106--106
+\OT1/cmr/m/n/10.95 fig-u-ra-tions have a triv-ial
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19 <./images/chapter4/0deg.png> <./images/chapter4/90deg.png> <./images/chapte
+r4/180deg.png>]) [20 <./images/chapter4/feedback_sim4.png> <./images/chapter4/f
+eedback_sim5.png> <./images/chapter4/feedback_sim6.png> <./images/chapter4/feed
+back_sim3.png> <./images/chapter4/feedback_sim2.png> <./images/chapter4/feedbac
+k_sim7.png>] [21]
 \openout2 = `conclusionsAndRecommendations.aux'.
 
  (conclusionsAndRecommendations.tex
 Chapter 5.
-) [18
+) [22
 
 
 
@@ -572,14 +665,14 @@ Chapter 5.
  (appendix.tex
 Appendix A.
 
-LaTeX Warning: Reference `eq:simpleProb' on page 19 undefined on input line 35.
+LaTeX Warning: Reference `eq:simpleProb' on page 23 undefined on input line 35.
 
 
-[19
+[23
 
 
 
-] [20]
+] [24]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 52.
 
 ("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.f
@@ -588,20 +681,20 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 52.
- [21] [22] [23] [24] [25] [26] [27]
-<images/appendix/phaseSpace/1.png, id=129, 1371.1225pt x 657.45625pt>
+ [25] [26] [27] [28] [29] [30] [31]
+<images/appendix/phaseSpace/1.png, id=167, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/1.png Graphic file (type png)
 <use images/appendix/phaseSpace/1.png>
 Package pdftex.def Info: images/appendix/phaseSpace/1.png  used on input line 2
 11.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/phaseSpace/2.png, id=130, 1371.1225pt x 657.45625pt>
+<images/appendix/phaseSpace/2.png, id=168, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/2.png Graphic file (type png)
 <use images/appendix/phaseSpace/2.png>
 Package pdftex.def Info: images/appendix/phaseSpace/2.png  used on input line 2
 16.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/phaseSpace/3.png, id=131, 1371.1225pt x 657.45625pt>
+<images/appendix/phaseSpace/3.png, id=169, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/3.png Graphic file (type png)
 <use images/appendix/phaseSpace/3.png>
 Package pdftex.def Info: images/appendix/phaseSpace/3.png  used on input line 2
@@ -611,58 +704,58 @@ Package pdftex.def Info: images/appendix/phaseSpace/3.png  used on input line 2
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28 <./images/appendix/phaseSpace/1.png> <./images/appendix/phaseSpace/2.png>]
-<images/appendix/phaseSpace/4.png, id=135, 1371.1225pt x 657.45625pt>
+[32 <./images/appendix/phaseSpace/1.png> <./images/appendix/phaseSpace/2.png>]
+<images/appendix/phaseSpace/4.png, id=174, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/4.png Graphic file (type png)
 <use images/appendix/phaseSpace/4.png>
 Package pdftex.def Info: images/appendix/phaseSpace/4.png  used on input line 2
 26.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
 
-[29 <./images/appendix/phaseSpace/3.png> <./images/appendix/phaseSpace/4.png>]
-<images/appendix/phaseSpace/5.png, id=139, 1371.1225pt x 657.45625pt>
+[33 <./images/appendix/phaseSpace/3.png> <./images/appendix/phaseSpace/4.png>]
+<images/appendix/phaseSpace/5.png, id=178, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/5.png Graphic file (type png)
 <use images/appendix/phaseSpace/5.png>
 Package pdftex.def Info: images/appendix/phaseSpace/5.png  used on input line 2
 31.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/phaseSpace/6.png, id=140, 1371.1225pt x 657.45625pt>
+<images/appendix/phaseSpace/6.png, id=179, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/6.png Graphic file (type png)
 <use images/appendix/phaseSpace/6.png>
 Package pdftex.def Info: images/appendix/phaseSpace/6.png  used on input line 2
 36.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
 
-[30 <./images/appendix/phaseSpace/5.png> <./images/appendix/phaseSpace/6.png>]
-<images/appendix/phaseSpace/7.png, id=144, 1371.1225pt x 657.45625pt>
+[34 <./images/appendix/phaseSpace/5.png> <./images/appendix/phaseSpace/6.png>]
+<images/appendix/phaseSpace/7.png, id=183, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/7.png Graphic file (type png)
 <use images/appendix/phaseSpace/7.png>
 Package pdftex.def Info: images/appendix/phaseSpace/7.png  used on input line 2
 41.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/phaseSpace/8.png, id=145, 1371.1225pt x 657.45625pt>
+<images/appendix/phaseSpace/8.png, id=184, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/8.png Graphic file (type png)
 <use images/appendix/phaseSpace/8.png>
 Package pdftex.def Info: images/appendix/phaseSpace/8.png  used on input line 2
 46.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
 
-[31 <./images/appendix/phaseSpace/7.png> <./images/appendix/phaseSpace/8.png>]
-<images/appendix/phaseSpace/9.png, id=149, 1371.1225pt x 657.45625pt>
+[35 <./images/appendix/phaseSpace/7.png> <./images/appendix/phaseSpace/8.png>]
+<images/appendix/phaseSpace/9.png, id=188, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/9.png Graphic file (type png)
 <use images/appendix/phaseSpace/9.png>
 Package pdftex.def Info: images/appendix/phaseSpace/9.png  used on input line 2
 51.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/phaseSpace/10.png, id=150, 1371.1225pt x 657.45625pt>
+<images/appendix/phaseSpace/10.png, id=189, 1371.1225pt x 657.45625pt>
 File: images/appendix/phaseSpace/10.png Graphic file (type png)
 <use images/appendix/phaseSpace/10.png>
 Package pdftex.def Info: images/appendix/phaseSpace/10.png  used on input line 
 256.
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
 
-[32 <./images/appendix/phaseSpace/9.png> <./images/appendix/phaseSpace/10.png>]
-[33] [34]
+[36 <./images/appendix/phaseSpace/9.png> <./images/appendix/phaseSpace/10.png>]
+[37] [38]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 312.
 
 
@@ -677,144 +770,149 @@ Overfull \hbox (9.37927pt too wide) in paragraph at lines 333--334
 [][] 
  []
 
-[35] [36] [37]
-<images/appendix/simexpt/1.png, id=170, 1371.1225pt x 657.45625pt>
+[39] [40] [41]
+<images/appendix/simexpt/1.png, id=209, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/1.png Graphic file (type png)
 <use images/appendix/simexpt/1.png>
 Package pdftex.def Info: images/appendix/simexpt/1.png  used on input line 391.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/simexpt/2.png, id=171, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/2.png, id=210, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/2.png Graphic file (type png)
 <use images/appendix/simexpt/2.png>
 Package pdftex.def Info: images/appendix/simexpt/2.png  used on input line 396.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
- [38 <./images/appendix/simexpt/1.png> <./images/appendix/simexpt/2.png>]
-<images/appendix/simexpt/3.png, id=175, 1371.1225pt x 657.45625pt>
+ [42 <./images/appendix/simexpt/1.png> <./images/appendix/simexpt/2.png>]
+<images/appendix/simexpt/3.png, id=214, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/3.png Graphic file (type png)
 <use images/appendix/simexpt/3.png>
 Package pdftex.def Info: images/appendix/simexpt/3.png  used on input line 401.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/simexpt/4.png, id=176, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/4.png, id=215, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/4.png Graphic file (type png)
 <use images/appendix/simexpt/4.png>
 Package pdftex.def Info: images/appendix/simexpt/4.png  used on input line 406.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
- [39 <./images/appendix/simexpt/3.png> <./images/appendix/simexpt/4.png>]
-<images/appendix/simexpt/5.png, id=181, 1371.1225pt x 657.45625pt>
+ [43 <./images/appendix/simexpt/3.png> <./images/appendix/simexpt/4.png>]
+<images/appendix/simexpt/5.png, id=219, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/5.png Graphic file (type png)
 <use images/appendix/simexpt/5.png>
 Package pdftex.def Info: images/appendix/simexpt/5.png  used on input line 411.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/simexpt/6.png, id=182, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/6.png, id=220, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/6.png Graphic file (type png)
 <use images/appendix/simexpt/6.png>
 Package pdftex.def Info: images/appendix/simexpt/6.png  used on input line 416.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
- [40 <./images/appendix/simexpt/5.png> <./images/appendix/simexpt/6.png>]
-<images/appendix/simexpt/7.png, id=186, 1371.1225pt x 657.45625pt>
+ [44 <./images/appendix/simexpt/5.png> <./images/appendix/simexpt/6.png>]
+<images/appendix/simexpt/7.png, id=225, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/7.png Graphic file (type png)
 <use images/appendix/simexpt/7.png>
 Package pdftex.def Info: images/appendix/simexpt/7.png  used on input line 421.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/simexpt/8.png, id=187, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/8.png, id=226, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/8.png Graphic file (type png)
 <use images/appendix/simexpt/8.png>
 Package pdftex.def Info: images/appendix/simexpt/8.png  used on input line 426.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
 
-[41 <./images/appendix/simexpt/7.png> <./images/appendix/simexpt/8.png>]
-<images/appendix/simexpt/9.png, id=191, 1371.1225pt x 657.45625pt>
+[45 <./images/appendix/simexpt/7.png> <./images/appendix/simexpt/8.png>]
+<images/appendix/simexpt/9.png, id=230, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/9.png Graphic file (type png)
 <use images/appendix/simexpt/9.png>
 Package pdftex.def Info: images/appendix/simexpt/9.png  used on input line 431.
 
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/simexpt/10.png, id=192, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/10.png, id=231, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/10.png Graphic file (type png)
 <use images/appendix/simexpt/10.png>
 Package pdftex.def Info: images/appendix/simexpt/10.png  used on input line 436
 .
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
 
-[42 <./images/appendix/simexpt/9.png> <./images/appendix/simexpt/10.png>]
-<images/appendix/simexpt/11.png, id=196, 1371.1225pt x 657.45625pt>
+[46 <./images/appendix/simexpt/9.png> <./images/appendix/simexpt/10.png>]
+<images/appendix/simexpt/11.png, id=235, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/11.png Graphic file (type png)
 <use images/appendix/simexpt/11.png>
 Package pdftex.def Info: images/appendix/simexpt/11.png  used on input line 441
 .
 (pdftex.def)             Requested size: 260.17464pt x 124.74744pt.
-<images/appendix/simexpt/12.png, id=197, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/12.png, id=236, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/12.png Graphic file (type png)
 <use images/appendix/simexpt/12.png>
 Package pdftex.def Info: images/appendix/simexpt/12.png  used on input line 446
 .
 (pdftex.def)             Requested size: 260.17464pt x 124.74744pt.
-<images/appendix/simexpt/13.png, id=198, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/13.png, id=237, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/13.png Graphic file (type png)
 <use images/appendix/simexpt/13.png>
 Package pdftex.def Info: images/appendix/simexpt/13.png  used on input line 451
 .
 (pdftex.def)             Requested size: 260.17464pt x 124.74744pt.
 
-[43 <./images/appendix/simexpt/11.png> <./images/appendix/simexpt/12.png> <./im
+[47 <./images/appendix/simexpt/11.png> <./images/appendix/simexpt/12.png> <./im
 ages/appendix/simexpt/13.png>]
-<images/appendix/simexpt/14.png, id=202, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/14.png, id=241, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/14.png Graphic file (type png)
 <use images/appendix/simexpt/14.png>
 Package pdftex.def Info: images/appendix/simexpt/14.png  used on input line 456
 .
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
-<images/appendix/simexpt/15.png, id=203, 1371.1225pt x 657.45625pt>
+<images/appendix/simexpt/15.png, id=242, 1371.1225pt x 657.45625pt>
 File: images/appendix/simexpt/15.png Graphic file (type png)
 <use images/appendix/simexpt/15.png>
 Package pdftex.def Info: images/appendix/simexpt/15.png  used on input line 461
 .
 (pdftex.def)             Requested size: 433.62pt x 207.92244pt.
- [44 <./images/appendix/simexpt/14.png> <./images/appendix/simexpt/15.png>] [45
-] [46] [47]
-<images/appendix/vectors/1.png, id=217, 1371.1225pt x 652.4375pt>
+ [48 <./images/appendix/simexpt/14.png> <./images/appendix/simexpt/15.png>] [49
+] [50] [51]
+<images/appendix/vectors/1.png, id=256, 1371.1225pt x 652.4375pt>
 File: images/appendix/vectors/1.png Graphic file (type png)
 <use images/appendix/vectors/1.png>
 Package pdftex.def Info: images/appendix/vectors/1.png  used on input line 549.
 
 (pdftex.def)             Requested size: 433.62pt x 206.33524pt.
-<images/appendix/vectors/2.png, id=218, 1371.1225pt x 652.4375pt>
+<images/appendix/vectors/2.png, id=257, 1371.1225pt x 652.4375pt>
 File: images/appendix/vectors/2.png Graphic file (type png)
 <use images/appendix/vectors/2.png>
 Package pdftex.def Info: images/appendix/vectors/2.png  used on input line 554.
 
 (pdftex.def)             Requested size: 433.62pt x 206.33524pt.
- [48 <./images/appendix/vectors/1.png> <./images/appendix/vectors/2.png>]
-<images/appendix/vectors/3.png, id=222, 1371.1225pt x 652.4375pt>
+ [52 <./images/appendix/vectors/1.png> <./images/appendix/vectors/2.png>]
+<images/appendix/vectors/3.png, id=261, 1371.1225pt x 652.4375pt>
 File: images/appendix/vectors/3.png Graphic file (type png)
 <use images/appendix/vectors/3.png>
 Package pdftex.def Info: images/appendix/vectors/3.png  used on input line 559.
 
 (pdftex.def)             Requested size: 433.62pt x 206.33524pt.
-<images/appendix/vectors/5.png, id=223, 1371.1225pt x 652.4375pt>
+<images/appendix/vectors/5.png, id=262, 1371.1225pt x 652.4375pt>
 File: images/appendix/vectors/5.png Graphic file (type png)
 <use images/appendix/vectors/5.png>
 Package pdftex.def Info: images/appendix/vectors/5.png  used on input line 564.
 
 (pdftex.def)             Requested size: 433.62pt x 206.33524pt.
- [49 <./images/appendix/vectors/3.png> <./images/appendix/vectors/5.png>]) [50]
- (draft.bbl
+ [53 <./images/appendix/vectors/3.png> <./images/appendix/vectors/5.png>] [54] 
+[55] [56] [57] [58]
+Overfull \hbox (44.62921pt too wide) in paragraph at lines 715--717
+[][] 
+ []
+
+[59] [60]) [61] (draft.bbl
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ½ in font cmr12!
- [51
+ [62
 
 
-]) [52] (draft.aux
-(abstract.aux) (introduction.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux)
+]) [63] (draft.aux (abstract.aux)
+(introduction.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux)
 (conclusionsAndRecommendations.aux) (appendix.aux))
 
 LaTeX Warning: There were undefined references.
@@ -824,10 +922,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5674 strings out of 493303
- 90252 string characters out of 3127608
- 229833 words of memory out of 3000000
- 9062 multiletter control sequences out of 15000+200000
+ 5733 strings out of 493303
+ 92092 string characters out of 3127608
+ 230878 words of memory out of 3000000
+ 9111 multiletter control sequences out of 15000+200000
  15932 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,13n,41p,477b,1410s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -850,9 +948,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/Anton Cruz/AppData
 Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y8.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmti12.pfb>
-Output written on draft.pdf (56 pages, 1908909 bytes).
+Output written on draft.pdf (68 pages, 2118383 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
+ 349 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 
