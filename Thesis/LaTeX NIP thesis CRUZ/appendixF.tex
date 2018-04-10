@@ -1,0 +1,104 @@
+\chapter{Steady-state Simulations}
+\label{apndx:steadstatesim}
+Shown is the code that outputs the simulations with the analytical steady-state as well as the mean of the system for a single set of parameters.
+
+\begin{lstlisting}
+
+#####################################################
+#Simulates applause for a specific set of parameters#
+#Displays the appropriate steady state value        #
+#Parameters can be adjusted accordingly below       #
+#####################################################
+
+
+import applause_functions as app
+import matplotlib.pyplot as plt
+import numpy as np
+
+N = 10
+M = 10
+population = N * M
+time = 500
+t_1 = 2
+C = 0
+aStoC = 1
+bCtoS = 0.8
+alpha = 0.6
+beta = 1
+
+fig = plt.figure()
+ax = fig.add_subplot(111)
+sim = app.app_sim(aStoC, bCtoS, alpha, beta, N, M, C, time, t_1)
+plt.plot(sim)
+ax.text(0.45*time,1,'Steady-state:'+str(round(app.steady_nC(aStoC, bCtoS, alpha, beta, population, 1),0)), fontsize=20)
+ax.text(0.45*time,10,'Mean: '+str(round(np.mean(sim),1))+'$\pm$'+str(round(np.std(sim),2)), fontsize=20)
+ax.text(10,100,'N = '+str(population), fontsize=15)
+plt.axhline(np.mean(sim), color = 'r')
+plt.axhline(app.steady_nC(aStoC, bCtoS, alpha, beta, population, 1), color = 'g')
+plt.title('$a = $'+str(aStoC)+' $b = $'+str(bCtoS)+r' $\alpha=$'+str(alpha)+r' $\beta=$'+str(beta),fontsize=20)
+plt.xlabel('Time',fontsize=18)
+plt.ylabel('State'+r' $n_{c}$',fontsize=18)
+plt.xlim(0,time)
+plt.ylim(0,110)
+plt.savefig('ssB.png')
+plt.show()
+
+\end{lstlisting}
+
+Following is the code used to generate the data points of the simulated steady-state values to be plotted against the analytic steady-state solutions.
+
+\begin{lstlisting}
+
+#Takes the last point of the simulation (Trials) times then calculates mean and std#
+#Does so for varying a-bar values                                                  #
+#Creates .csv file with columns: a-bar, mean, std                                  #
+#Plots the data points                                                             #
+#Parameters can be adjusted accordingly below                                      #
+
+
+import applause_functions as app
+import matplotlib.pyplot as plt
+import numpy as np
+
+#####Simulation Parameters#####
+N = 10
+M = 10
+startPop = 20
+time = 100
+t_1 = 0
+aStoC = 1.0
+bCtoS = 0.8 
+alpha = 1
+beta = 10
+###Point Generator Parameters###
+Trials = 50
+interval = 0.02
+##############################
+def pointGen(aStoC, bCtoS, beta, N, M, startPop, time, t_1, Trials, interval):
+    
+    meanlist = []
+    stdlist = []
+    ilist = []
+    for i in np.arange(0,1.0,interval):
+        list_a = []
+        for j in range(Trials):
+            list_a.append(app.app_sim(aStoC, bCtoS, i, beta, N, M, startPop, time, t_1)[time-1]) #takes the last number from the appsim vector
+        mean = np.mean(np.array(list_a))
+        std = np.std(np.array(list_a))  
+        meanlist.append(mean)
+        stdlist.append(std)
+        ilist.append(i)
+
+    ilist = np.array(ilist)
+    meanlist = np.array(meanlist)
+    stdlist = np.array(stdlist)
+    
+    #writes ilist,meanlist, and stdlist into a txt file
+    filename = 'b = ' + str(bCtoS) + ', beta = ' + str(beta) + ', startPop = ' + str(startPop) + '.txt'    
+    with open(filename,'w') as f:
+        lis=[ilist,meanlist,stdlist]
+        for x in zip(*lis):
+            f.write("{0}\t{1}\t{2}\n".format(*x))
+            
+    return (ilist,meanlist,stdlist)
+\end{lstlisting}

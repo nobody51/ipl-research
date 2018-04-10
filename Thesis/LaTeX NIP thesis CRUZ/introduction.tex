@@ -1,0 +1,89 @@
+\chapter{Applause Dynamics}
+
+\section{Nature of Applause}
+
+\hspace{\parindent} 
+The audience applause is one of the most ubiquitous and timeless social phenomenons observed in human culture.
+People would normally applaud to express their approval over a social event, and may even jeer, shout, snap, and boo, on top of clapping.
+People collectively seem to know when to start clapping in any occasion, whether it is during or after a speech, performance, sport event, etc.
+People also unconsciously know whether to continue clapping or to stop. 
+Audience members extend their applause to musicians playing an outro or to being addressed, and stop immediately when the musician proceeds with the next song.
+Lastly, it is historically known that people who have been hired to willingly and consciously applaud are inserted in an audience in hopes to extend the applause for a social event \cite{claque_origin}.
+These observations of an audience applause being self-organized and somehow connected give rise to the question of what the social dynamics are among the audience and they decide when and how long to clap.
+
+\section{Social Dynamics}
+Social economics is an interdisciplinary study of the interrelationship between group and individual behavior. 
+Individual decisions made interactively with others have been modelled formally to be able to understand the dynamics. 
+The underlying assumption is that individuals are influenced by the choices of others. 
+From this assumption, it can be said that feedback loops exist since the past decisions of a certain individuals may influence future decisions of others. Examples of such social phenomena are crime, teenage pregnancy, and high school dropout rates.\cite{socialDynamics}\cite{peerEffects}
+Tools that can be used to quantify and analyze the dynamics are network theory and complex systems.
+
+\section{Quantifying the Dynamics}
+\subsection{Networks}
+A network is a collection of points,called  vertices or nodes, connected by lines, called edges.
+Networks are normally used to represent systems that contain individual parts that are somehow connected, such as the internet, big data, or social interactions \cite{networkNewman}. These are used to study the nature of individual components and their dynamics.
+A few properties of networks are topology and homogeneity. 
+Network topology refers to how the network is connected. 
+The different topologies are named after the  physical shape of the network, such as a ring or a line.
+A key topology is a fully-connected network wherein all nodes are completely connected to each other\cite{networkEvo}.
+Network homogeneity refers to the nodes of the network. A homogeneous network has individual nodes of the same characteristics and properties while a heterogeneous network contains different nodes.
+
+\subsection{Complex Systems}
+By investigating the mechanisms that determine the topology of the networks of aforementioned systems (internet, big data, etc.) properties previously not observed when studying the components individually emerge. 
+This has lead to a new field of study that focuses on how relationships between components give rise to its collective behaviors and how the system interacts and forms relationships with its environment, called complex systems.
+Intrinsic to complex systems is that they are hard to model due to the complexity of the interacting components.
+Over-simplifying the complexity may lead to the failure of the model\cite{hownatureworks}.
+Included in as a property of complexity is the inclination of a large system to mutate after reaching a critical point or state.
+Methods on studying complex systems have been established and broken down to three parts, data acquisition, modelling, and measuring complexity.
+Data acquisition generally tends towards statistical learning and data mining. 
+Modelling turns to mainly two methods, cellular automata and agent-based modelling\cite{complexSys}.
+Measuring complexity has demanded an inclusion of new metrics.
+These metrics include average path length, clustering coefficient, degree distribution, and spectral properties\cite{statCS}.
+
+\subsection{Cellular Automata}
+The cellular automata is a simple mathematical model used to investigate self-organization in statistical mechanics. 
+This model represents spatial dynamics and highlights local interactions, spatial heterogeneity, and large-scale aggregate patterns.
+The simplest model arranges the agents in a grid.
+From here agents interact with each other according to certain specified rules.
+Interaction among agents varies upon the prescribed neighborhood.
+One neighborhood in particular is the Moore neighborhood.
+This takes all adjacent spaces in all directions (N,S,E,W,NE,NW,SE,SW) from a reference agent.
+An extended Moore neighborhood extends the interactions $n$ units away from the reference agent.
+A modified Moore neighborhood changes the interactable directions \cite{Moore}.
+
+\section{The audience as a complex system}
+\hspace{\parindent} Human behavior is usually studied qualitatively (under psychology or sociology) and is notoriously hard to quantify due to all the possible parameters and the difficulty in creating a controlled environment.
+The audience applause is an example of human behavior that is a collective of interacting agents with underlying dynamics.
+This allows us to treat the audience as a complex system in order to study its complexity and dynamics.
+ 
+
+\section{Known Studies and Models}
+There have been very little studies made on applause, down to the sound \cite{soundofhands}, its rhythm \cite{rhythm} and its dynamics \cite{Mann20130466}. 
+One particular study treats the applause as a contagion that propagates through the audience, allowing it to be modelled using an SIR-model.
+The SIR-model allows each unit in the model (for this case, each person henceforth referred to as an agent) to have 3 states, susceptible, infected, and recovered. 
+Each agent is initially silent before the applause (susceptible).
+After which they start to applaud (infected).
+Finally stop clapping (recovered).
+Such a model would be appropriate if the agents no longer clap again after stopping, but cases exist where the agent my stop clapping prematurely, and then feel obliged to clap again due to the fact that the rest still continue to do so.
+With that, an SIS-like compartmental model with only two states(susceptible or infected) is adapted to properly account for such cases.
+
+\section{Problem Statement}
+
+The dynamics of the applause of an audience with $N$ agents using an SIS epidemic model is presented and analyzed. 
+The agents are connected via two dimensional lattice network and are initially fully connected.
+Later on, the agents will observe a modified, extended Moore neighborhood in order to incorporate spatial effects.
+The network is assumed to be homogeneous for simplicity; all agents share the same parameters for a given simulation.
+Agents are assumed to clap immediately after a performance, and may continue to do so depending on their given parameters.
+The dynamics of the system are also analyzed.
+Spatial effects are then incorporated to the model to more appropriately simulate audience applause.
+This is done to investigate if there is a correlation between the applause duration and the audience size.
+The simulations will also be confirmed with a dataset of real-life applause.
+Why people applaud and to what are not investigated due to its unquantifiable nature.
+
+  
+
+
+
+
+
+

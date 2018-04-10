@@ -1,0 +1,36 @@
+\chapter{Combined probability of functions $f$ and $f'$}
+\label{apndx:prob}
+
+\hspace{\parindent} The forcing function $f$ permits agents to undergo $\mathrm{R_{1}}$ and is represented with a probability $p_{1}$.
+The probability that $\mathrm{R_{1}}$ does not occur is $q_{1} = 1 - p_{1}$.
+Likewise for the function $f'$ to undergo $\mathrm{R_{1}}$ is represented with a probability $p_{2}$, and non-occurring probability $q_{2}$.
+Combining the probabilities $p$ and $q$ results to
+
+\begin{eqnarray}
+\label{eqn:conservP1}
+p_{1} + q_{1} &&= 1 \\
+\label{eqn:conservP2}
+p_{2} + q_{2} &&= 1
+\end{eqnarray}
+
+Multiplying the equations \eqref{eqn:conservP1} and \eqref{eqn:conservP2} and simplifying
+
+\begin{eqnarray}
+(p_{1} + q_{1})(p_{2} + q_{2}) &&= 1 \\
+p_{1}p_{2} + p_{1}q_{2} + p_{2}q_{1} + q_{1}q_{2} &&= 1
+\end{eqnarray}
+
+$q_{1}q_{2}$ represents neither event occuring thus
+
+\begin{eqnarray}
+p_{net} = 1 - q_{1}q_{2} &&= 1 - (1-p_{1})(1-p_{2}) \\
+&&= 1 - (1 - p_{1} - p_{2} + p_{1}p_{2}) \\
+&&= p_{1} + p_{2} - p_{1}p_{2}
+\label{eq:simpleProb}
+\end{eqnarray}
+
+Replacing \eqref{eq:simpleProb} with the functions gives
+\begin{equation}
+p_{net} = f + f' - f'f
+\end{equation}
+which is used in \eqref{eq:p(r1)}

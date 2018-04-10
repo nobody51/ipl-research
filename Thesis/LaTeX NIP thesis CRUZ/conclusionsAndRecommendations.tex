@@ -1,0 +1,23 @@
+\chapter{Conclusions and Recommendations}
+\label{conclusions}
+
+\hspace{\parindent} A compartmental model SIS-like model was successfully constructed to study the complexity of the audience applause, as well as simulate it with an agent-based Monte Carlo method. 
+The original, fully-connected system exhibited parameter sets that express a  non-trivial steady-state solution. The dynamics of the given system were studied, uncovering critical points in the phase space plot. 
+These critical points provide the point at which the model bifurcates from the trivial steady-state solution to the non-trivial stready-state solution.
+For $\beta \leq 1$, the critical point is $\bar{a}_{1} \approx b$.
+The system follows the trivial solution for $\bar{a} \leq \bar{a}_{1}$ and then bifurcates at the critical point.
+After which, it follows the non-trivial solution.
+For $\beta > 1$, there is a second critical point $\bar{a}_2 = \frac{b(N-1)^{2}}{(N-n_{c}^{*})(N-1+\beta n_{c}^{*})}$ where $n_{c}^{*} \equiv [1+(\beta-1)N]/2\beta$.
+The system follows the trivial solution for $\bar{a} \leq \bar{a}_{2}$ and then bifurcates somewhere before critical point.
+Bifurcation for parameter sets with $\beta > 1$ are only partially predicted.
+Once it bifurcates to the non-trivial steady-state, it follows the upper branch of the curve.
+Also, the lower branch of $\beta >1$ curves are shown to be unstable; if the system starts with a state $n_{c}$ on the lower branch, it can either settle to the trivial or non-trivial solution.
+Further modifications were made to the compartmental model in order to incorporate spatial effects, as such effects more closely resembled a real-life applause.
+Three spatial configurations were investigated, $\theta = 0, \frac{\pi}{2}, \pi$, each $\theta$ value corresponding to the view of the reference agent.
+Each configuration successfully incorporated the population size dependence of the applause duration.
+$\theta = \pi$ was used as it was the most realistic as well as the easiest to implement in code.
+This allowed simulations to show a correlation between applause duration and audience size.
+The simulations were backed by data points of real-life applause.
+Analysis of the model with incorporated spatial effects is necessary in order to understand the dynamics of the audience applause.
+This will allow further development of the model, which in turn, will more closely resemble the real-life applause.
+

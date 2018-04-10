@@ -1,0 +1,27 @@
+The audience applause is a social phenomena that is very rich in dynamics. 
+This human behavior is a collective of interacting agents that can be treated as a complex system.
+Studies have treated the audience applause similarly to a disease in order to apply epidemic models to analyze the dynamics.
+A compartmental SCS model based on the SIS epidemic model is created and simulated using the Monte Carlo method where state transitions $\mathrm{S} \rightarrow \mathrm{C} \rightarrow \mathrm{S}$.
+Functions are included in order to reproduce the audience applause as accurately as possible.
+$f$ is a forcing function that initiates the state transitions.
+$f'(\alpha)$ is a feedback function that promotes agents to transition to state C if more agents are in state C.
+$g'(\beta)$ is a modulation function that inhibits agents in state C to transition to state S.
+Simulations with specific parameter sets $(a,b,\alpha,\beta)$ show cases where the state $n_{c}$ never reaches zero, or that the applause never ends (which doesn't occur in real life).
+The steady-state of the system is calculated and plotted in phase space in order to analyze its dynamics.
+For $\beta \leq 1$, there are two solutions, the trivial ($n^\infty_{c}=0$), and non-trivial steady-state ($n^\infty_{c}>0$).
+For $\beta > 1$, there are three solutions, the trivial solution, and two non-trivial solutions.
+These two solutions are the upper branch ($n^\infty_{c1}>0$) and the lower branch of the curve ($n^\infty_{c2}>0$).
+Critical points have been observed to which the system experiences bifurcation from the trivial steady-state to the non-trivial steady-state.
+For parameter sets with $\beta >1$, the lower branch was shown to be unstable.
+If the system starts in state $n_{c}$ with $\bar{a}$ values on the lower branch of the curve, it can settle to either trivial or non-trivial solution.
+The original SCS model exhibited scale-free behavior when the population size was increased.
+Spatial effects were incorporated to the SCS model in order to more appropriately model the audience applause.
+This is then confirmed by comparing with a real-life applause data set.
+
+
+
+
+
+
+
+
