@@ -1,0 +1,36 @@
+\BOOKMARK [0][-]{Doc-Start}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.1}{List of Figures}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Applause Dynamics}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Nature of Applause}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Social Dynamics}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Quantifying the Dynamics}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.3.1}{Networks}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.2}{Complex Systems}{section.1.3}% 8
+\BOOKMARK [2][-]{subsection.1.3.3}{Cellular Automata}{section.1.3}% 9
+\BOOKMARK [1][-]{section.1.4}{The audience as a complex system}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.5}{Known Studies and Models}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.6}{Problem Statement}{chapter.1}% 12
+\BOOKMARK [0][-]{chapter.2}{Monte Carlo Compartmental Method}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Compartmental Model}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.1.1}{States}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.2}{Parameters}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.3}{Functions}{section.2.1}% 17
+\BOOKMARK [1][-]{section.2.2}{Simulation Alogrithm}{chapter.2}% 18
+\BOOKMARK [0][-]{chapter.3}{Steady-state dynamics of the audience applause}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Steady-state equation for different cases}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.1.1}{Bifurcation Theory}{section.3.1}% 21
+\BOOKMARK [2][-]{subsection.3.1.2}{Critical Points}{section.3.1}% 22
+\BOOKMARK [1][-]{section.3.2}{Simulation experiments}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Unstable points}{section.3.2}% 24
+\BOOKMARK [0][-]{chapter.4}{Incorporating Spatial Effects}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Different configurations for field of vision}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Simulating the different spatial configurations}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Finding the parameters \(a,b,,\) for real-life applause}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Conclusions and Recommendations}{}% 29
+\BOOKMARK [0][-]{appendix.A}{Combined probability of functions f and f'}{}% 30
+\BOOKMARK [0][-]{appendix.B}{Deriving the steady-state equation}{}% 31
+\BOOKMARK [0][-]{appendix.C}{Steady-state Phase Space}{}% 32
+\BOOKMARK [0][-]{appendix.D}{Critical points}{}% 33
+\BOOKMARK [0][-]{appendix.E}{Steady-state Simulations Results}{}% 34
+\BOOKMARK [0][-]{appendix.F}{Vector Graphs}{}% 35
+\BOOKMARK [0][-]{appendix.G}{Best fit parameter sets}{}% 36

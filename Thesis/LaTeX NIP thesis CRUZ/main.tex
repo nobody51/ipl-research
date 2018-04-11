@@ -1,0 +1,102 @@
+%% 
+%% main.tex
+%% Formatted NIP thesis conformed with the CS guidelines for the MS
+%% Thesis and PhD Dissertation accepted for year 2005 onwards.
+%% See nip.sty for possible modifications.
+%%
+%% Copyright (C) 2006  Johnrob Y. Bantang: johnrob.bantang@gmail.com
+%%
+%% This tex is free; you can redistribute it and/or modify it under
+%% the terms of the GNU General Public License as published by the
+%% Free Software Foundation version 2. See gpl.txt.
+%%
+%% This tex files are distributed in the hope that it will be useful,
+%% but WITHOUT ANY WARRANTY; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+%% General Public License for more details.
+%%
+%% You should have received a copy of the GNU General Public License
+%% along with this program; if not, write to the Free Software
+%% Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+%% 02110-1301, USA.
+%%
+%%
+%%
+
+\documentclass[]{nip} %%use nip class
+%% to add options: phd, ms, bs, applied
+
+%%packages to be used.
+\usepackage[square,numbers,sort&compress]{natbib}
+   %% square-bracketed, numbered, sorted, and compressed citations
+   %% for more info: http://merkel.zoneo.net/Latex/natbib.php
+\usepackage[a4paper, total={6in, 9.25in}]{geometry}
+\usepackage{verbatim} %% for \verbatiminput
+\usepackage{graphicx} %% for the graphics environment
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{newlfont}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{mathtools}
+\usepackage{breqn}
+\usepackage{amsmath}
+
+
+%% Header section
+\title{Dynamics of an SIS-like audience applause model} %%required]7
+
+\author{Antonio Miguel V. Cruz} %% required
+\email{acruz@nip.upd.edu.ph}%% appears only when draft version use \draft option.
+\adviser{Johnrob Y. Bantang}{Ph.D.}%% required
+\reader{First I. Reader}{Ph.D.}%% required
+\secondReader{No A. Co-Adviser}{Ph.D.}%% optional if with coadviser
+%\coadviser{Another A. Adviser}{Ph.D.}%% replace "\coadviser" with "\secondReader" if no co-adviser
+\director{Roland V. Sarmago}{Ph.D.}%% required
+\dean{Perry S. Ong}{Ph.D.} %%required
+\gradyear{2018} \gradmonth{June} %%graduation month and year
+\defenseDate{xx May 2018}
+
+%% Preliminary pages' contents input here..
+
+% \dedication{ \input{000Dedication.tex} }%% optional, see dedication.tex for sample content.
+% \acknowledgments{ \input{00Acknowledgments.tex} } %% optional, see acknowledgment.tex for sample content.
+\abstract{ \input{abstract.tex} } %% see abstract.tex
+\pacs{02.50.Ey Stochastic processes, 87.10.Rt Monte Carlo simulations, 89.65.-s Social and economic systems}
+
+
+%% Main document section
+\begin{document}
+\maketitle %% creates title page, do not remove this line.
+\makePrelim %% creates preliminary pages, do not remove this line.
+
+\input{introduction}
+\input{chapter2}
+\input{chapter3}
+\input{chapter4}
+\input{conclusionsAndRecommendations}
+%% you may add more chapters by including more files just as above.
+%% see the files for patterns of the format used.
+
+\appendix
+\input{appendixA.tex}
+%\input{appendixB.tex} %code
+\input{appendixC.tex}
+\input{appendixD.tex}
+\input{appendixE.tex}
+%\input{appendixF.tex} %code
+\input{appendixG.tex}
+%\input{appendixH.tex} %code
+\input{appendixI.tex}
+%\input{appendixJ.tex} %code
+%\input{appendixK.tex} %code
+\input{appendixL.tex}
+
+\bibliographystyle{ieeetr}
+\bibliography{biblio} %% see file: "biblio.bib"
+
+\end{document}
+%%end of main.tex

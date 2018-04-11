@@ -1,0 +1,25 @@
+\chapter{Deriving the steady-state equation}
+\label{apndx:derivSS}
+\hspace{\parindent} Setting $\frac{d\vec{n}}{dt} = 0$,
+
+\begin{align}
+\frac{d}{dt}n_{c} & = 0\\
+a(f+f'-f'f)n_{s} - bg'n_{c} & = 0\\
+a(f+f'-f'f)n_{s} & = bg'n_{c} \\
+\end{align}
+
+Note: $N = n_{c} + n_{s}, n_{s} = N - n{c}$, and $f = 0$.
+
+\begin{equation}
+af'(N - n{c}) = bg'n_{c} \\
+\label{eq:noFunc}
+\end{equation}
+
+Plugging in \eqref{eq:f'} and \eqref{eq:g'} to \eqref{eq:noFunc}:
+
+\begin{align}
+a(\alpha\frac{n_{c}}{N-1})(N - n_{c}) &= b(\frac{1}{1 + \frac{\beta n_{c}}{N-1}})(n_{c}) \\
+\frac{a\alpha (N - n_{c})}{N-1}n_{c} &= b\frac{N-1}{N-1+\beta n_{c}}n_{c} \\
+a\alpha (N - n_{c}) &= b\frac{(N-1)^2}{N-1+\beta n_{c}} \\
+a\alpha(N-n_{c})(N-1 + \beta n_{c}) & = b(N-1)^{2}
+\end{align}

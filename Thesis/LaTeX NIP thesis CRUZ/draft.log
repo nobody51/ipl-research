@@ -1,0 +1,1027 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.4)  10 APR 2018 18:22
+entering extended mode
+**./draft.tex
+(draft.tex
+LaTeX2e <2017-04-15>
+Babel <3.17> and hyphenation patterns for 75 language(s) loaded.
+(nip.cls
+Document Class: nip 2006/04/07 v0.1e Standard LaTeX document class
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo
+"
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (NIPThesis.sty
+
+! LaTeX Error: Command \dedication already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340   {\vfill\end{center}}
+                             %%end
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\tclineskip=\skip43
+\defbaselineskip=\skip44
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsma
+th.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amste
+xt.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsge
+n.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbs
+y.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsop
+n.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsf
+onts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amss
+ymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm
+.sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\newlfont
+.sty"
+Package: newlfont 1998/08/17 v2.2m Standard LaTeX package
+LaTeX Info: Redefining \em on input line 57.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latexsym
+.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+))
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\grap
+hicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyv
+al.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\grap
+hics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig
+.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\
+graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\
+pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subca
+ption.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\capti
+on.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\capti
+on3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+)
+\c@ContinuedFloat=\count100
+)
+\c@subfigure=\count101
+\c@subtable=\count102
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp
+.sty"
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.d
+ef"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\list
+ings.sty"
+\lst@mode=\count103
+\lst@gtempboxa=\box28
+\lst@token=\toks26
+\lst@length=\count104
+\lst@currlwidth=\dimen121
+\lst@column=\count105
+\lst@pos=\count106
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count107
+\lst@lineno=\count108
+\lst@maxwidth=\dimen124
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstm
+isc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count109
+\lst@skipnumbers=\count110
+\lst@framebox=\box29
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\list
+ings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+ (draft.aux (abstract.aux) (introduction.aux) (chapter2.aux)
+(chapter3.aux
+
+LaTeX Warning: Label `fig:compareSingleSS' multiply defined.
+
+) (chapter4.aux) (conclusionsAndRecommendations.aux) (appendix.aux))
+\openout1 = `draft.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.f
+d"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 27.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-p
+df.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen125
+\scratchbox=\box30
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen126
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks28
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epst
+opdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\in
+fwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfe
+xt.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kv
+definekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\lt
+xcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvop
+tions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kv
+setkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\et
+excmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\if
+luatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pd
+ftexcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\if
+pdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count117
+
+Generating Listings...
+Generating title page...
+UNDERGRADUATE options selected...
+[1
+
+{C:/Users/Anton Cruz/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+...done generating title page.
+\@defbaselineskip=\skip51
+(draft.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa
+.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb
+.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 2.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ulasy.fd
+"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [2
+
+])
+\tf@toc=\write3
+\openout3 = `draft.toc'.
+
+ [3]
+...ignore overfull hbox(es) they should be minor errors..
+...done generating listings.
+Starting to load main contents...
+\openout2 = `abstract.aux'.
+
+(abstract.tex [1
+
+
+]) [2]
+\openout2 = `introduction.aux'.
+
+ (introduction.tex
+Chapter 1.
+[3
+
+
+
+] [4]
+Overfull \hbox (20.70862pt too wide) in paragraph at lines 44--53
+\OT1/cmr/m/n/12 The cel-lu-lar au-tomata is a sim-ple math-e-mat-i-cal model us
+ed to in-ves-ti-gate self-organization
+ []
+
+[5] [6]) [7]
+\openout2 = `chapter2.aux'.
+
+ (chapter2.tex
+Chapter 2.
+<images/chapter2/model2.png, id=44, 509.65407pt x 324.46219pt>
+File: images/chapter2/model2.png Graphic file (type png)
+<use images/chapter2/model2.png>
+Package pdftex.def Info: images/chapter2/model2.png  used on input line 16.
+(pdftex.def)             Requested size: 216.81pt x 138.03075pt.
+[8
+
+
+
+] [9 <./images/chapter2/model2.png>] [10]
+<images/chapter2/simA.png, id=57, 433.62pt x 289.08pt>
+File: images/chapter2/simA.png Graphic file (type png)
+<use images/chapter2/simA.png>
+Package pdftex.def Info: images/chapter2/simA.png  used on input line 89.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter2/simB.png, id=58, 433.62pt x 289.08pt>
+File: images/chapter2/simB.png Graphic file (type png)
+<use images/chapter2/simB.png>
+Package pdftex.def Info: images/chapter2/simB.png  used on input line 93.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+) [11 <./images/chapter2/simA.png> <./images/chapter2/simB.png>] [12]
+\openout2 = `chapter3.aux'.
+
+ (chapter3.tex
+Chapter 3.
+[13
+
+
+
+]
+<images/chapter3/phaseSpace.png, id=71, 1371.1225pt x 652.4375pt>
+File: images/chapter3/phaseSpace.png Graphic file (type png)
+<use images/chapter3/phaseSpace.png>
+Package pdftex.def Info: images/chapter3/phaseSpace.png  used on input line 31.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+ [14 <./images/chapter3/phaseSpace.png>] [15]
+<images/chapter3/ssA.png, id=78, 433.62pt x 289.08pt>
+File: images/chapter3/ssA.png Graphic file (type png)
+<use images/chapter3/ssA.png>
+Package pdftex.def Info: images/chapter3/ssA.png  used on input line 80.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter3/ssB.png, id=79, 433.62pt x 289.08pt>
+File: images/chapter3/ssB.png Graphic file (type png)
+<use images/chapter3/ssB.png>
+Package pdftex.def Info: images/chapter3/ssB.png  used on input line 84.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+
+Underfull \hbox (badness 2600) in paragraph at lines 86--86
+[]\OT1/cmr/m/n/10.95 (b) |A sim-u-la-tion with a triv-ial
+ []
+
+<images/chapter3/phase+sim.png, id=80, 1371.1225pt x 652.4375pt>
+File: images/chapter3/phase+sim.png Graphic file (type png)
+<use images/chapter3/phase+sim.png>
+Package pdftex.def Info: images/chapter3/phase+sim.png  used on input line 99.
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <./images/chapter3/ssA.png> <./images/chapter3/ssB.png>] [17 <./images/chap
+ter3/phase+sim.png>]
+<images/appendix/vectors/4.png, id=91, 1371.1225pt x 652.4375pt>
+File: images/appendix/vectors/4.png Graphic file (type png)
+<use images/appendix/vectors/4.png>
+Package pdftex.def Info: images/appendix/vectors/4.png  used on input line 133.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+) [18 <./images/appendix/vectors/4.png>]
+\openout2 = `chapter4.aux'.
+
+ (chapter4.tex
+Chapter 4.
+<images/chapter4/1.png, id=95, 433.62pt x 289.08pt>
+File: images/chapter4/1.png Graphic file (type png)
+<use images/chapter4/1.png>
+Package pdftex.def Info: images/chapter4/1.png  used on input line 20.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/2.png, id=96, 433.62pt x 289.08pt>
+File: images/chapter4/2.png Graphic file (type png)
+<use images/chapter4/2.png>
+Package pdftex.def Info: images/chapter4/2.png  used on input line 24.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/3.png, id=97, 433.62pt x 289.08pt>
+File: images/chapter4/3.png Graphic file (type png)
+<use images/chapter4/3.png>
+Package pdftex.def Info: images/chapter4/3.png  used on input line 28.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/4.png, id=98, 433.62pt x 289.08pt>
+File: images/chapter4/4.png Graphic file (type png)
+<use images/chapter4/4.png>
+Package pdftex.def Info: images/chapter4/4.png  used on input line 33.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19
+
+
+
+]
+<images/chapter4/0degD.png, id=102, 512.3943pt x 512.3943pt>
+File: images/chapter4/0degD.png Graphic file (type png)
+<use images/chapter4/0degD.png>
+Package pdftex.def Info: images/chapter4/0degD.png  used on input line 56.
+(pdftex.def)             Requested size: 130.08731pt x 130.08415pt.
+<images/chapter4/90degD.png, id=103, 512.3943pt x 512.3943pt>
+File: images/chapter4/90degD.png Graphic file (type png)
+<use images/chapter4/90degD.png>
+Package pdftex.def Info: images/chapter4/90degD.png  used on input line 60.
+(pdftex.def)             Requested size: 130.08731pt x 130.08415pt.
+<images/chapter4/180degD.png, id=104, 512.3943pt x 512.3943pt>
+File: images/chapter4/180degD.png Graphic file (type png)
+<use images/chapter4/180degD.png>
+Package pdftex.def Info: images/chapter4/180degD.png  used on input line 64.
+(pdftex.def)             Requested size: 130.08731pt x 130.08415pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./images/chapter4/1.png> <./images/chapter4/2.png> <./images/chapter4/3.pn
+g> <./images/chapter4/4.png>]
+<images/chapter4/feedback_sim4.png, id=112, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim4.png Graphic file (type png)
+<use images/chapter4/feedback_sim4.png>
+Package pdftex.def Info: images/chapter4/feedback_sim4.png  used on input line 
+81.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/feedback_sim5.png, id=113, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim5.png Graphic file (type png)
+<use images/chapter4/feedback_sim5.png>
+Package pdftex.def Info: images/chapter4/feedback_sim5.png  used on input line 
+85.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/feedback_sim6.png, id=114, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim6.png Graphic file (type png)
+<use images/chapter4/feedback_sim6.png>
+Package pdftex.def Info: images/chapter4/feedback_sim6.png  used on input line 
+89.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/feedback_sim3.png, id=115, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim3.png Graphic file (type png)
+<use images/chapter4/feedback_sim3.png>
+Package pdftex.def Info: images/chapter4/feedback_sim3.png  used on input line 
+94.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/feedback_sim2.png, id=116, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim2.png Graphic file (type png)
+<use images/chapter4/feedback_sim2.png>
+Package pdftex.def Info: images/chapter4/feedback_sim2.png  used on input line 
+99.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/chapter4/feedback_sim7.png, id=117, 433.62pt x 289.08pt>
+File: images/chapter4/feedback_sim7.png Graphic file (type png)
+<use images/chapter4/feedback_sim7.png>
+Package pdftex.def Info: images/chapter4/feedback_sim7.png  used on input line 
+104.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./images/chapter4/0degD.png> <./images/chapter4/90degD.png> <./images/chap
+ter4/180degD.png>]
+<images/chapter4/confirmA.png, id=124, 433.62pt x 289.08pt>
+File: images/chapter4/confirmA.png Graphic file (type png)
+<use images/chapter4/confirmA.png>
+Package pdftex.def Info: images/chapter4/confirmA.png  used on input line 142.
+(pdftex.def)             Requested size: 303.53267pt x 202.36343pt.
+File: images/chapter4/4.png Graphic file (type png)
+<use images/chapter4/4.png>
+Package pdftex.def Info: images/chapter4/4.png  used on input line 146.
+(pdftex.def)             Requested size: 303.53267pt x 202.36343pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [22] [23] [24 <./images/chapter4/feedback_sim4.png> <./images/chapter4/feedba
+ck_sim5.png> <./images/chapter4/feedback_sim6.png> <./images/chapter4/feedback_
+sim3.png> <./images/chapter4/feedback_sim2.png> <./images/chapter4/feedback_sim
+7.png>] [25 <./images/chapter4/confirmA.png>]
+\openout2 = `conclusionsAndRecommendations.aux'.
+
+
+(conclusionsAndRecommendations.tex
+Chapter 5.
+[26
+
+
+
+]) [27]
+\openout2 = `appendix.aux'.
+
+ (appendix.tex
+Appendix A.
+
+LaTeX Warning: Reference `eq:simpleProb' on page 28 undefined on input line 35.
+
+
+[28
+
+
+
+] [29]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 52.
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omlcmr.f
+d"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 52.
+ [30] [31] [32] [33] [34] [35] [36]
+<images/appendix/phaseSpace/1.png, id=184, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/1.png Graphic file (type png)
+<use images/appendix/phaseSpace/1.png>
+Package pdftex.def Info: images/appendix/phaseSpace/1.png  used on input line 2
+11.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/phaseSpace/2.png, id=185, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/2.png Graphic file (type png)
+<use images/appendix/phaseSpace/2.png>
+Package pdftex.def Info: images/appendix/phaseSpace/2.png  used on input line 2
+16.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/phaseSpace/3.png, id=186, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/3.png Graphic file (type png)
+<use images/appendix/phaseSpace/3.png>
+Package pdftex.def Info: images/appendix/phaseSpace/3.png  used on input line 2
+21.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37 <./images/appendix/phaseSpace/1.png> <./images/appendix/phaseSpace/2.png>]
+<images/appendix/phaseSpace/4.png, id=190, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/4.png Graphic file (type png)
+<use images/appendix/phaseSpace/4.png>
+Package pdftex.def Info: images/appendix/phaseSpace/4.png  used on input line 2
+26.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+
+[38 <./images/appendix/phaseSpace/3.png> <./images/appendix/phaseSpace/4.png>]
+<images/appendix/phaseSpace/5.png, id=194, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/5.png Graphic file (type png)
+<use images/appendix/phaseSpace/5.png>
+Package pdftex.def Info: images/appendix/phaseSpace/5.png  used on input line 2
+31.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/phaseSpace/6.png, id=195, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/6.png Graphic file (type png)
+<use images/appendix/phaseSpace/6.png>
+Package pdftex.def Info: images/appendix/phaseSpace/6.png  used on input line 2
+36.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+
+[39 <./images/appendix/phaseSpace/5.png> <./images/appendix/phaseSpace/6.png>]
+<images/appendix/phaseSpace/7.png, id=199, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/7.png Graphic file (type png)
+<use images/appendix/phaseSpace/7.png>
+Package pdftex.def Info: images/appendix/phaseSpace/7.png  used on input line 2
+41.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/phaseSpace/8.png, id=200, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/8.png Graphic file (type png)
+<use images/appendix/phaseSpace/8.png>
+Package pdftex.def Info: images/appendix/phaseSpace/8.png  used on input line 2
+46.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+
+[40 <./images/appendix/phaseSpace/7.png> <./images/appendix/phaseSpace/8.png>]
+<images/appendix/phaseSpace/9.png, id=205, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/9.png Graphic file (type png)
+<use images/appendix/phaseSpace/9.png>
+Package pdftex.def Info: images/appendix/phaseSpace/9.png  used on input line 2
+51.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/phaseSpace/10.png, id=206, 1371.1225pt x 657.45625pt>
+File: images/appendix/phaseSpace/10.png Graphic file (type png)
+<use images/appendix/phaseSpace/10.png>
+Package pdftex.def Info: images/appendix/phaseSpace/10.png  used on input line 
+256.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+
+[41 <./images/appendix/phaseSpace/9.png> <./images/appendix/phaseSpace/10.png>]
+[42] [43]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 312.
+
+
+("C:\Users\Anton Cruz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.f
+d"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 312.
+
+Overfull \hbox (9.37927pt too wide) in paragraph at lines 333--334
+[][] 
+ []
+
+[44] [45] [46]
+<images/appendix/simexpt/1.png, id=226, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/1.png Graphic file (type png)
+<use images/appendix/simexpt/1.png>
+Package pdftex.def Info: images/appendix/simexpt/1.png  used on input line 391.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/simexpt/2.png, id=227, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/2.png Graphic file (type png)
+<use images/appendix/simexpt/2.png>
+Package pdftex.def Info: images/appendix/simexpt/2.png  used on input line 396.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+ [47 <./images/appendix/simexpt/1.png> <./images/appendix/simexpt/2.png>]
+<images/appendix/simexpt/3.png, id=231, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/3.png Graphic file (type png)
+<use images/appendix/simexpt/3.png>
+Package pdftex.def Info: images/appendix/simexpt/3.png  used on input line 401.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/simexpt/4.png, id=232, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/4.png Graphic file (type png)
+<use images/appendix/simexpt/4.png>
+Package pdftex.def Info: images/appendix/simexpt/4.png  used on input line 406.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+ [48 <./images/appendix/simexpt/3.png> <./images/appendix/simexpt/4.png>]
+<images/appendix/simexpt/5.png, id=236, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/5.png Graphic file (type png)
+<use images/appendix/simexpt/5.png>
+Package pdftex.def Info: images/appendix/simexpt/5.png  used on input line 411.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/simexpt/6.png, id=237, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/6.png Graphic file (type png)
+<use images/appendix/simexpt/6.png>
+Package pdftex.def Info: images/appendix/simexpt/6.png  used on input line 416.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+ [49 <./images/appendix/simexpt/5.png> <./images/appendix/simexpt/6.png>]
+<images/appendix/simexpt/7.png, id=241, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/7.png Graphic file (type png)
+<use images/appendix/simexpt/7.png>
+Package pdftex.def Info: images/appendix/simexpt/7.png  used on input line 421.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/simexpt/8.png, id=242, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/8.png Graphic file (type png)
+<use images/appendix/simexpt/8.png>
+Package pdftex.def Info: images/appendix/simexpt/8.png  used on input line 426.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+
+[50 <./images/appendix/simexpt/7.png> <./images/appendix/simexpt/8.png>]
+<images/appendix/simexpt/9.png, id=246, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/9.png Graphic file (type png)
+<use images/appendix/simexpt/9.png>
+Package pdftex.def Info: images/appendix/simexpt/9.png  used on input line 431.
+
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/simexpt/10.png, id=247, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/10.png Graphic file (type png)
+<use images/appendix/simexpt/10.png>
+Package pdftex.def Info: images/appendix/simexpt/10.png  used on input line 436
+.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+
+[51 <./images/appendix/simexpt/9.png> <./images/appendix/simexpt/10.png>]
+<images/appendix/simexpt/11.png, id=251, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/11.png Graphic file (type png)
+<use images/appendix/simexpt/11.png>
+Package pdftex.def Info: images/appendix/simexpt/11.png  used on input line 441
+.
+(pdftex.def)             Requested size: 260.17464pt x 124.74744pt.
+<images/appendix/simexpt/12.png, id=252, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/12.png Graphic file (type png)
+<use images/appendix/simexpt/12.png>
+Package pdftex.def Info: images/appendix/simexpt/12.png  used on input line 446
+.
+(pdftex.def)             Requested size: 260.17464pt x 124.74744pt.
+<images/appendix/simexpt/13.png, id=253, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/13.png Graphic file (type png)
+<use images/appendix/simexpt/13.png>
+Package pdftex.def Info: images/appendix/simexpt/13.png  used on input line 451
+.
+(pdftex.def)             Requested size: 260.17464pt x 124.74744pt.
+
+[52 <./images/appendix/simexpt/11.png> <./images/appendix/simexpt/12.png> <./im
+ages/appendix/simexpt/13.png>]
+<images/appendix/simexpt/14.png, id=258, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/14.png Graphic file (type png)
+<use images/appendix/simexpt/14.png>
+Package pdftex.def Info: images/appendix/simexpt/14.png  used on input line 456
+.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+<images/appendix/simexpt/15.png, id=259, 1371.1225pt x 657.45625pt>
+File: images/appendix/simexpt/15.png Graphic file (type png)
+<use images/appendix/simexpt/15.png>
+Package pdftex.def Info: images/appendix/simexpt/15.png  used on input line 461
+.
+(pdftex.def)             Requested size: 433.62pt x 207.92244pt.
+ [53 <./images/appendix/simexpt/14.png> <./images/appendix/simexpt/15.png>] [54
+] [55] [56]
+<images/appendix/vectors/1.png, id=272, 1371.1225pt x 652.4375pt>
+File: images/appendix/vectors/1.png Graphic file (type png)
+<use images/appendix/vectors/1.png>
+Package pdftex.def Info: images/appendix/vectors/1.png  used on input line 549.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+<images/appendix/vectors/2.png, id=273, 1371.1225pt x 652.4375pt>
+File: images/appendix/vectors/2.png Graphic file (type png)
+<use images/appendix/vectors/2.png>
+Package pdftex.def Info: images/appendix/vectors/2.png  used on input line 554.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+ [57 <./images/appendix/vectors/1.png> <./images/appendix/vectors/2.png>]
+<images/appendix/vectors/3.png, id=277, 1371.1225pt x 652.4375pt>
+File: images/appendix/vectors/3.png Graphic file (type png)
+<use images/appendix/vectors/3.png>
+Package pdftex.def Info: images/appendix/vectors/3.png  used on input line 559.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+<images/appendix/vectors/5.png, id=278, 1371.1225pt x 652.4375pt>
+File: images/appendix/vectors/5.png Graphic file (type png)
+<use images/appendix/vectors/5.png>
+Package pdftex.def Info: images/appendix/vectors/5.png  used on input line 564.
+
+(pdftex.def)             Requested size: 433.62pt x 206.33524pt.
+ [58 <./images/appendix/vectors/3.png> <./images/appendix/vectors/5.png>] [59] 
+[60] [61] [62] [63]
+Overfull \hbox (44.62921pt too wide) in paragraph at lines 715--717
+[][] 
+ []
+
+[64] [65] [66]
+<images/appendix/bestfit/confirm1.png, id=308, 433.62pt x 289.08pt>
+File: images/appendix/bestfit/confirm1.png Graphic file (type png)
+<use images/appendix/bestfit/confirm1.png>
+Package pdftex.def Info: images/appendix/bestfit/confirm1.png  used on input li
+ne 772.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/appendix/bestfit/confirm2.png, id=309, 433.62pt x 289.08pt>
+File: images/appendix/bestfit/confirm2.png Graphic file (type png)
+<use images/appendix/bestfit/confirm2.png>
+Package pdftex.def Info: images/appendix/bestfit/confirm2.png  used on input li
+ne 775.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/appendix/bestfit/confirm3.png, id=310, 433.62pt x 289.08pt>
+File: images/appendix/bestfit/confirm3.png Graphic file (type png)
+<use images/appendix/bestfit/confirm3.png>
+Package pdftex.def Info: images/appendix/bestfit/confirm3.png  used on input li
+ne 782.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/appendix/bestfit/confirm4.png, id=311, 433.62pt x 289.08pt>
+File: images/appendix/bestfit/confirm4.png Graphic file (type png)
+<use images/appendix/bestfit/confirm4.png>
+Package pdftex.def Info: images/appendix/bestfit/confirm4.png  used on input li
+ne 785.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/appendix/bestfit/confirm5.png, id=312, 433.62pt x 289.08pt>
+File: images/appendix/bestfit/confirm5.png Graphic file (type png)
+<use images/appendix/bestfit/confirm5.png>
+Package pdftex.def Info: images/appendix/bestfit/confirm5.png  used on input li
+ne 792.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+<images/appendix/bestfit/confirm6.png, id=313, 433.62pt x 289.08pt>
+File: images/appendix/bestfit/confirm6.png Graphic file (type png)
+<use images/appendix/bestfit/confirm6.png>
+Package pdftex.def Info: images/appendix/bestfit/confirm6.png  used on input li
+ne 795.
+(pdftex.def)             Requested size: 173.44534pt x 115.62994pt.
+) [67 <./images/appendix/bestfit/confirm1.png> <./images/appendix/bestfit/confi
+rm2.png> <./images/appendix/bestfit/confirm3.png> <./images/appendix/bestfit/co
+nfirm4.png> <./images/appendix/bestfit/confirm5.png> <./images/appendix/bestfit
+/confirm6.png>] (draft.bbl
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [68
+
+
+]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+) [69] (draft.aux (abstract.aux)
+(introduction.aux) (chapter2.aux) (chapter3.aux) (chapter4.aux)
+(conclusionsAndRecommendations.aux) (appendix.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5817 strings out of 493303
+ 93907 string characters out of 3127608
+ 233134 words of memory out of 3000000
+ 9190 multiletter control sequences out of 15000+200000
+ 15932 words of font info for 63 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,13n,41p,477b,1410s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Anton Cruz\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\tcrm1200.pk><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Anton Cruz/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Use
+rs/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Anton Cruz/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Anton C
+ruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Anton Cruz/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/An
+ton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy6.pfb><C:/Users/Anton Cruz/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Anton Cruz/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on draft.pdf (72 pages, 2215292 bytes).
+PDF statistics:
+ 386 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
+
