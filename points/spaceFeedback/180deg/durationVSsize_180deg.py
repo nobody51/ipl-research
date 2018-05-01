@@ -32,8 +32,8 @@ def indexFilter(value,qlist,r1,r2):
     except ValueError:
         return 0
 
-for alpha_iter in range(8,11,1):
-    for bCtoS_iter in range(5,11,1):
+for alpha_iter in range(2,3,1):
+    for bCtoS_iter in range(6,7,1):
         
         #lists to be graphed
         duration = []
@@ -71,5 +71,10 @@ for alpha_iter in range(8,11,1):
         plt.show()
         print(str(time.time() - start_time) + ' seconds; ' + str(time.strftime("%Y-%m-%d %H:%M:%S")))
   
-
+        filename = 'datapoints_bestfit_durationVSsize'+'.txt'    
+        with open(filename,'w') as f:
+            lis=[population,duration,durationSTD]
+            for x in zip(*lis):
+                f.write("{0}\t{1}\t{2}\n".format(*x))
+            
 
