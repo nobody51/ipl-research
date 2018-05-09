@@ -6,7 +6,8 @@
 \section{Compartmental Model}
 \subsection{States}
 
-\hspace{\parindent}The proposed compartmental model separates the agents into two states, silent (S) and clapping (C). The silent state replaces the susceptible state while clapping state replaces the infected state. 
+\hspace{\parindent}The proposed compartmental model separates the agents into two states, silent (S) and clapping (C). 
+The silent state replaces the susceptible state while clapping state replaces the infected state. 
 Intuitively, agents in state S are audience members who are not clapping while agents in state C are audience members who are clapping.
 The number of agents in state S, given by $n_{s}$, and the number of agents in state C, given by $n_{c}$, dictate the state of the system, given by $\vec{n}$ where $\vec{n}\equiv(n_{c},n_{s})$.
 It is assumed that the total number of agents $N$ is fixed, where $N = n_{c} + n_{s}$ and $\vec{n}$ is fully specified by $n_{c}$ alone.
@@ -21,8 +22,8 @@ It is assumed that the total number of agents $N$ is fixed, where $N = n_{c} + n
 \subsection{Parameters}
 \hspace{\parindent}The parameters $a$ and $b$ are the transition parameters.
 They range from $0$ to $1$ to represent transitional probabilities.
-$a$ controls the transition probability from S to C and $b$ controls the transition probability from C to S.
-The respective probability transitions are given by ${R}_{1}$ and ${R}_{2}$ where
+The transitional probabilities from S to C and C to S are controlled by $a$ and $b$ respectively.
+The corresponding transition probabilities are given by ${R}_{1}$ and ${R}_{2}$ where
 \begin{eqnarray}
 \mathrm{R}_{1} &:& \mathrm{S} \overset{a}{\longrightarrow} \mathrm{C} \label{eq:r1} \\
 \mathrm{R}_{2} &:& \mathrm{C} \overset{b}{\longrightarrow} \mathrm{S}.\label{eq:r2}
@@ -44,7 +45,8 @@ The function $f'$ incorporates this feedback mechanism and is parametrized by $\
   f'(\alpha) = \alpha \frac{n_c}{N-1},
 \end{equation}
 where $\alpha$ ranges from $0$ to $1$ for probabilistic interpretations.
-The probability for a spontaneous $\mathrm{R}_{1}$ transition is directly proportional to the fraction of the population in state C and $\alpha$. The denominator is set to $N-1$ because an agent cannot spontaneously influence itself; it is only influenced by the rest of the population.
+The probability for a spontaneous $\mathrm{R}_{1}$ transition is directly proportional to $\alpha$ and the fraction of the population in state C. 
+The denominator is set to $N-1$ because an agent cannot spontaneously influence itself; it is only influenced by the rest of the population.
 The function is more effective when there are more agents in state C.
 
 Finally, audience members may contain their own bias towards a social event and may applaud longer or shorter depending on the bias.
@@ -56,7 +58,7 @@ The factor $g'$ incorporates the inhibition as a modulation function and is para
 \end{equation}
 where $\beta \geq 0$, representing the bias.
 Higher $\beta$ translates to agents less likely to undergo transition $\mathrm{R}_{2}$ 
-The equation is taken from the Michaelis-Menten equation, which aims to model enzyme kinetics\cite{michaelisconstant}.
+Equation (\eqref{g'}) is taken from the Michaelis-Menten equation, which aims to model enzyme kinetics\cite{michaelisconstant}.
 
 This completes the differential equations for the reactions \eqref{eq:r1} and \eqref{eq:r2}:
 \begin{eqnarray}
