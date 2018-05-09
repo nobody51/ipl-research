@@ -1,18 +1,11 @@
 \chapter{Incorporating Spatial Effects}
 \label{chap4}
 
-\hspace{\parindent} After analysing the model, it was then compared to real-life applause.
-The applause duration of varying audience sizes was recorded and graphed. 
-Selection criteria for the data included a definite applause time that was fully-recorded and uncut, and a known population size. 
-Because of this, most of the videos are live concerts and musical performances.
+\hspace{\parindent} After analysing the model, it was then compared to real applause.
+The applause duration of varying audience sizes were taken from Youtube videos of musical concerts and performances.
+The applause duration was manually recorded.
+The audience size was either taken from the seating capacity and/or ticket sales for the given concert/performance, or was estimated by the area or room the audience resided in.
 The relationship of the data set was tested with both applause duration and population size in order to find an appropriate linear dependence, as shown in figure \ref{fig:realclap}.
-
-Figure \ref{fig:realclap} (d) makes the most sense; the applause duration of the audience is dependent on the size of the audience.
-The question now is whether or not the compartmental model can recreate \ref{fig:realclap} (d).
-The current model shows no population size dependence; changing the population size does not affect the applause duration for a given set of parameters.
-This is because of the assumption that the network is fully connected, meaning that an audience member in front is influenced the exact same way by the whole audience as an audience member at the back.
-As this does not seem to be the case in real-life applause, spatial effects must be incorporated by modifying the feedback function $f'(\alpha)$.
-
 
 \begin{figure}[h]
   \centering
@@ -38,17 +31,22 @@ As this does not seem to be the case in real-life applause, spatial effects must
   \label{fig:realclap}
 \end{figure}
 
+Figure \ref{fig:realclap} (d) makes the most sense; the applause duration of the audience is dependent on the size of the audience.
+The question now is whether or not the compartmental model can recreate \ref{fig:realclap} (d).
+The current model shows no population size dependence; changing the population size does not affect the applause duration for a given set of parameters.
+This is because of the assumption that the network is fully connected, meaning that an audience member in front is influenced the exact same way by the whole audience as an audience member at the back.
+As this does not seem to be the case in real-life applause, spatial effects must be incorporated by modifying the feedback function $f'(\alpha)$.
 
 \section{Different configurations for field of vision}
 
 \hspace{\parindent}The field of view configurations represent the audience members that may influence the reference agent.
-In real-life, the  reference agent is only influenced by the audience members it can see.
+In real life, the  reference agent is influenced by a limited number of audience members, not the whole audience.
 The network is no longer fully-connected, observing a modified, extended Moore neighborhood.
 It is extended since it considers all agents till the front row of the system, and not just those $1$ unit away.
-Is is modified since it does not consider all directions; the directions considered are affected by the configuration.
+It is modified since it does not consider all directions; the directions considered are affected by the configuration.
 $\theta = 0$ represents all audience members only directly in front of the reference agent until the very front. 
 $\theta = \pi$ represents all rows ahead of the reference agent. 
-$\theta = \frac{\pi}{2}$ is self-explanatory; considering all agents from the north-east direction to the north-west in a $90$ degree arc. The configurations are shown in figure \ref{fig:spaceconfig}.
+$\theta = \frac{\pi}{2}$ considers all agents from the north-east direction to the north-west in a $90$ degree arc. The configurations are shown in figure \ref{fig:spaceconfig}.
 
 \begin{figure}[h]
   \centering
@@ -141,20 +139,35 @@ This means that graphs with data points of $0$ seconds are to be disregarded.
 \begin{figure}[h]
   \centering
   \begin{subfigure}[b]{\linewidth}
-    \includegraphics[width=\linewidth]{images/chapter4/confirmA.png}
+    \includegraphics[width=\linewidth]{images/chapter4/sim.png}
     \caption{Simulated points showing population size dependence.}
   \end{subfigure}
   \begin{subfigure}[b]{\linewidth}
-    \includegraphics[width=\linewidth]{images/chapter4/4.png}
+    \includegraphics[width=\linewidth]{images/chapter4/real.png}
     \caption{Real-life data points on population size dependence.}
   \end{subfigure}
   \caption{Comparing the simulated and actual graph of applause duration versus population size. Both increase linearly in the logarithmic scale.}
   \label{fig:durXsizComp}
 \end{figure}
 
-Shown in figure \ref{fig:durXsizComp} is the parameter set $(a=1,b-0.7,\alpha=0.8,\beta=1)$ that best recreates the real-life applause. Similar parameter sets are shown in the appendix (\ref{apndx:bestfit})
-Though this is the best fit parameter set, it still does not fully emulate the real-life applause.
+Shown in figure \ref{fig:durXsizComp} is the parameter set $(a=1,b-0.7,\alpha=0.8,\beta=1)$ that best recreates the real-life applause. 
+This was found by simply generating the applause duration versus audience size graph for every parameter set, then comparing its fitting function with that of the real applause. 
+Similar parameter sets are shown in the appendix (\ref{apndx:bestfit})
+Though this is the best fit parameter set, it still does not fully emulate the real applause.
 As seen, the data points for the real-life applause is more deviant compared to the simulation.
 The model may still be incomplete, or the data points for real-life applause is not enough.
-Further investigation is warranted, as well as an in-depth anaylsis on the new model.
+On reason for this is that the data points for real applause is not enough.
+Data acquisition was difficult due to a duration-size uncertainty.
+For big audience sizes, the size is well defined because of the seating capacity of the stadium or the ticket sales for the event. 
+Applause duration is very uncertain because it is very hard to determine when the applause starts and ends due to the sheer amount of people.
+Also, at no point does the crowd go completely silent, making it hard to distinguish applause from cheers and screems.
+For small audience sizes, the applause is well defined since it is clearly audible in the video, and can also be visually confirmed.
+The audience size is uncertain because the videos of small audience sizes are either street performances or room performances.
+For street perfomances, people come and go.
+For room performances, the videographer is focused on the performer, thus the audience size cannot be confirmed with absolute certainty and must be estimated.
+Another source for error is the spatial configuration. 
+The given setup only accounts for sight. A box with the reference agent at the center can be added in order to account for audible influence.
+Finally, the assumption that everyone claps after the performance does not encapsulate all forms of audience applause.
+This aspect can included by varying the forcing function to different probabilities, instead of 100%.
+An in-depth analysis on the new model is also warranted.
 

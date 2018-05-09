@@ -58,7 +58,9 @@ The factor $g'$ incorporates the inhibition as a modulation function and is para
 \end{equation}
 where $\beta \geq 0$, representing the bias.
 Higher $\beta$ translates to agents less likely to undergo transition $\mathrm{R}_{2}$ 
-Equation (\eqref{g'}) is taken from the Michaelis-Menten equation, which aims to model enzyme kinetics\cite{michaelisconstant}.
+Equation \eqref{eq:g'} is taken from the Michaelis-Menten equation, which aims to model enzyme kinetics\cite{michaelisconstant}.
+Figure \ref{fig:SCSmodel} shows how the states and functions interact to complete the compartmental SCS model.
+
 
 This completes the differential equations for the reactions \eqref{eq:r1} and \eqref{eq:r2}:
 \begin{eqnarray}
@@ -78,8 +80,8 @@ P(\mathrm{R}_{1}) &&= a(f + f' - f'f) \label{eq:p(r1)} \\
 P(\mathrm{R}_{2}) &&= bg' \label{eq:p(r2)}
 \end{eqnarray}
 
-Agents in state S undergo transition $\mathrm{R}_{1}$ with probability shown in \ref{eq:p(r1)}.
-Agents in state C undergo transition $\mathrm{R}_{2}$ with probability shown in \ref{eq:p(r2)}.
+Agents in state S undergo transition $\mathrm{R}_{1}$ with probability shown in \eqref{eq:p(r1)}.
+Agents in state C undergo transition $\mathrm{R}_{2}$ with probability shown in \eqref{eq:p(r2)}.
 A uniform random number, $u$, where $u \in [0,1]$, is drawn from a random number generator and then compared to the corresponding probability $P$.
 If $u \leq P$, the appropriate transition is allowed to occur.
 %The code developed to simulate the audience applause is provided in Appendix \ref{apndx:codelib}.

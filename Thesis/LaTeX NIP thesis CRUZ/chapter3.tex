@@ -10,18 +10,17 @@ The value can be calculated by equating either \eqref{eq:diff1} or \eqref{eq:dif
 \hspace{\parindent} The steady-state conditions are when the state $\vec{n}$ is fixed and when the forcing function expires. 
 This is when $d\vec{n}/dt = 0$ and when $f=0$.
 The derivation is shown in the appendix (\ref{apndx:derivSS})
-Once these conditions are achieved, \eqref{eq:diff1} and \eqref{eq:diff2} are simplified to the steady-state equation for $n_c$:
+Once these conditions are achieved, \eqref{eq:diff1} and \eqref{eq:diff2} are simplified to the steady-state equation for $n_c$
 
 \begin{equation}\label{eq:steadystate}
 \bar{a}(N-n_{c})(N-1 + \beta n_{c}) = b(N-1)^{2}
-\end{equation}
-
-where $\bar{a}\equiv a\alpha$. 
+\end{equation} where $\bar{a}\equiv a\alpha$. 
 The values of steady state $n_{c}$ may be solved for any given $\bar{a},b,$ and $\beta$.
 Parametrizing \eqref{eq:steadystate} to time gives the phases space plot for the given parameters $b$ and $\beta$, shown in figure \ref{fig:phaseSpace}.
-The phase space plots for various $b$ values are shown in Appendix \ref{apndx:phasespace}
+The phase space plots of the analytical steady-state values for various $b$ values are shown in Appendix \ref{apndx:phasespace}.
 Though the trivial steady-state solution is not included in \eqref{eq:steadystate}, it has been included in the phase space.
-The coordinate ($\bar{a}$,$n_{c}$) on the curves represent the $n_{c}$ value for a given $\bar{a}$ value at the given $b$ and $\beta$ value, where $\beta$ is the color of the curve.
+The coordinate ($\bar{a}$,$n_{c}$) on the curves represent the $n_{c}$ value for a given $\bar{a}$ value at the given $b$ and $\beta$ value.
+The different colors for the curves correspond to the different $\beta$ values as shown in the legend.
 Values below $0$ are extraneous since $n_{c}$ refers to the number of people clapping, which cannot be negative.
 This means that there are two possible steady-state values for $\beta \leq 1$, the trivial solution $0$, and the non-trivial solution found on the appropriate curve.
 On the other hand, there are three possible steady-state values for $\beta > 1$, the trivial solution $0$, and two non-trivial solutions found on the appropriate curve.
@@ -29,7 +28,7 @@ On the other hand, there are three possible steady-state values for $\beta > 1$,
 \begin{figure}
  \centering
   \includegraphics[width=\linewidth]{images/chapter3/phaseSpace.png}
-  \caption{The phase space plot of the steady-state value $n_{c}$ versus $\bar{a}$ for various $\beta$ values and $b = 0.5$. Included is the trivial steaty-state solution $n_{c} = 0$}
+  \caption{The phase space plot of the analytical steady-state value $n_{c}$ versus $\bar{a}$ for various $\beta$ values and $b = 0.5$. Included is the trivial steaty-state solution $n_{c} = 0$}
   \label{fig:phaseSpace}
 \end{figure}
 
@@ -71,7 +70,8 @@ Thus, the middle branch in the range $\bar{a}\in(\bar{a}_{2},\bar{a}_{1})$ is an
 \hspace{\parindent} Analytical results are confirmed by simulation. The number of iterations, $t$, is set to be much greater than the duration of the forcing function,$\tau$.
 Figure~\ref{fig:compareSingleSS} shows sample simulations along with the analytical steady-state and the average of the system.
 The analytical steady-state is plotted in green while the mean is plotted in red.
-As observed, the simulation closely resembles the analytical value. The system settles to its steady-state very early in the simulation.
+As observed, the simulation closely resembles the analytical value. 
+The system settles to its steady-state very early in the simulation since it starts to oscillate around the steady-state neat $t = 0$.
 It can be safely assumed that the $n_{c}$ values at $t \gg \tau$ are equivalent to $n_{c}$ for $t \rightarrow \infty$.
 
 \begin{figure}[h]
@@ -82,13 +82,13 @@ It can be safely assumed that the $n_{c}$ values at $t \gg \tau$ are equivalent 
   \end{subfigure}
   \begin{subfigure}[b]{0.4\linewidth}
     \includegraphics[width=\linewidth]{images/chapter3/ssB.png}
-    \caption{A simulation with a steady state of 0. The average $n_{c}$ value is approximately $0$.}
+    \caption{A simulation with a steady state value of 0. The average $n_{c}$ value is approximately $0$.}
   \end{subfigure}
-  \caption{Sample simulations that compare the analytical steady-state of the given parameters and the mean $n_{c}$ value of the system.}
+  \caption{Sample simulations that compare the analytical steady-state of the given parameters and the mean $n_{c}$ value of the system. In green is the analytical steady-state value. In red is the mean $n_{c}$ of the system.}
   \label{fig:compareSingleSS}
 \end{figure}
 
-$10$ sample runs were performed with different initial random number generator states and the final $n_{c}$ value for each iteration were recorded.
+Ten sample runs were performed with different initial random number generator states and the final $n_{c}$ value for each iteration were recorded.
 The mean and standard deviation of the simulated steady-state values are then computed for each parameter space $(\bar{a},b,\beta)$. 
 The data points were then plotted with the corresponding parametrized differential curve shown in Fig.~\ref{fig:phase+sim}.
 %All code used is provided in Appendix \ref{apndx:steadstatesim}, as well as 
@@ -104,17 +104,18 @@ More simulation experiments for various $b$ values are shown in Appendix \ref{ap
 For $\beta \leq 1$, the simulation is consistent with the trivial steady state solution until it reaches the critical point $\bar{a} = b$, after which follows non-trivial, non-extraneous solution consistent with \eqref{eq:steadystate}.
 Bifurcation occurs at $\bar{a}_1$.
 For $\beta > 1$, the simulation follows the trivial steady-state and then breaks away and approaches the vertex of \eqref{eq:steadystate} at $\bar{a}_{2}$, after which, continues to follow the upper branch of \eqref{eq:steadystate}.
-Bifurcation occurs somwhere before $\bar{a}_2$
+Bifurcation occurs somewhere before $\bar{a}_2$
 The analytical solutions fail to predict the bifurcation from the trivial solution to the vertex of the curve.
 Also, the significance of the lower branch for $\beta > 1$ curves is unknown and warrants further investigation.
-The vertex is said to be unstable due to the fact that it unreliably and unpredictably settles to either trivial or non-trivial solution.
-The lower branch may share this instability.    
+
+%The vertex is said to be unstable due to the fact that it unreliably and unpredictably settles to either trivial or non-trivial solution.
+%The lower branch may share this instability.    
 
 \subsection{Unstable points}
 \hspace{\parindent}For the previous simulation experiments, all agents start at state S and then forced to transition to state C. 
 To investigate the properties of the lower branch on the non-trivial solution, we vary the number of agents that start the simulation in state C and remove the forcing function. 
 This allows us to determine where the system will settle given the specific starting $n_{c}$ value, more particularly for $n_{c}$ values near the lower branch of the non-trivial solution. 
-The code that generate the vector graphs is provided in Appendix %\ref{apndx:vectsim}
+%The code that generate the vector graphs is provided in Appendix %\ref{apndx:vectsim}
 
 Shown in figure \ref{fig:vectorplot} are the new phase space graphs that include arrows that point to where that $n_{c}$ value for the given $\bar{a}$ settles.
 More vector graphs are available in Appendix \ref{apndx:vectgraph}
@@ -122,9 +123,9 @@ The color of the arrows represents the probability of going towards that directi
 Intuitively for $\beta \leq 1$, all $n_{c}$ values point towards the trivial solution for all $\bar{a}$ values less than  $\bar{a}_{1}$ 100\% of the time. 
 All $n_{c}$ with $\bar{a}$ values greater than $\bar{a}_{1}$ point towards the non-trival solution 100\% of the time.
 For $\beta > 1$, what differs is the behavior at the vertex and the lower branch of the non-trivial solution.
-$n_{c}$ values above the vertex have an estimated 50\% to either settle at the vertex or zero, while $n_{c}$ values below the vertex absolutely settle to zero.
-Points slightly above the lower branch tend more towards settling to the upper branch but still have a chance to settle at 0.
-Likewise for points below the lower branch.
+Points with $n_{c}$ values above the vertex have an estimated 50\% to either settle at the vertex or zero, while $n_{c}$ values below the vertex absolutely settle to zero.
+Points slightly above the lower branch tend to settle towards the upper branch more but still have a chance to settle at 0.
+The same can be said for points below the lower branch.
 Points within the lower branch have a 50\% of settling to either trivial or non trivial solution.
 This means that coordinates near the lower non-trivial branch are unstable, since there is no certainty to which steady-state solution they will settle to.
 

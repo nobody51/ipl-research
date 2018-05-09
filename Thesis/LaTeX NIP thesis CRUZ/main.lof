@@ -3,14 +3,14 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The compartmental model of audience applause based on the SIS epidemic model. Agents are either in state S or state C. Parameters $a$ and $b$ are the transitional probabilities. Functions $f$, $f'$, and $g'$ are further discussed.\relax }}{6}{figure.caption.3}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Sample simulations given a fixed population $N = 100$. Simulation (a) is a typical, intuitive audience applause that has an end. Simulation (b) is non-trivial and counter-intuitive in that it seems to have no end.\relax }}{8}{figure.caption.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The phase space plot of the steady-state value $n_{c}$ versus $\mathaccentV {bar}016{a}$ for various $\beta $ values and $b = 0.5$. Included is the trivial steaty-state solution $n_{c} = 0$\relax }}{10}{figure.caption.5}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Sample simulations that compare the analytical steady-state of the given parameters and the mean $n_{c}$ value of the system.\relax }}{12}{figure.caption.6}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The phase space plot of the analytical steady-state value $n_{c}$ versus $\mathaccentV {bar}016{a}$ for various $\beta $ values and $b = 0.5$. Included is the trivial steaty-state solution $n_{c} = 0$\relax }}{10}{figure.caption.5}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Sample simulations that compare the analytical steady-state of the given parameters and the mean $n_{c}$ value of the system. In green is the analytical steady-state value. In red is the mean $n_{c}$ of the system.\relax }}{12}{figure.caption.6}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces The simulated steady-state values plotted against the analytic steady-state curves. The error bars provide the extent of deviation in simulations. The vertex is represented with the cross.\relax }}{12}{figure.caption.7}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Vector graph for parameters $b = 0.8, \beta = 10$. The origin of the vector represents the initial $n_{c}$ and corresponding $\mathaccentV {bar}016{a}$ value. The direction it points reveals whether it settles to the trivial or non-trivial solution. The color represents the probability of settling towards the directed steady-state.\relax }}{14}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Different graphs of the data points of real-life applause.\relax }}{16}{figure.caption.9}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Different field-of-view configurations. The encircled black dot shaded in yellow is the reference agent. The boxes highlighted in yellow are what can influence the encircled reference agent.\relax }}{17}{figure.caption.10}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Different graphs comparing effect of different feedback functions under different parameters.\relax }}{19}{figure.caption.11}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Different graphs of the data points of real-life applause.\relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Different field-of-view configurations. The encircled black dot shaded in yellow is the reference agent. The boxes highlighted in yellow are what can influence the encircled reference agent.\relax }}{16}{figure.caption.10}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Different graphs comparing effect of different feedback functions under different parameters.\relax }}{17}{figure.caption.11}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Comparing the simulated and actual graph of applause duration versus population size. Both increase linearly in the logarithmic scale.\relax }}{20}{figure.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -1,0 +1,41 @@
+Manuscript Changelog
+
+2018-05-09
+
+1.2 Social Dynamics
+-gramatical error, specified what dynamics is modeled
+
+2.1.2 Parameters
+-rephrased how transitional probabilities "a" and "b" were introduced
+
+2.1.3 Functions
+-rephrased how the feedback function was explained
+-changed "the equation" to "Equation ( )"
+-included a discussion on figure 2.1
+
+2.2 Simulation Algorithm
+-fixed how equations were refered to
+
+3.1 Steady-state equation for different cases
+-rephrased how the color represented different beta values
+-indicated that the phase space plots are the analytical steady-state values
+
+3.2 Simulation experiments
+-indicated how the system settles very early in the simulation
+-removed the claim that the vertex is unpredictable and thus unstable
+
+3.2.1 Unstable Points
+-rephrased as indicated in the revisions
+
+4 Incorporating Spatial effects
+-explained where real life applause was taken from
+
+4.1 Different Configurations
+-fixed grammatical errors
+-rearranged format of figures for ease of reading
+-update spatial configuration images so theta is more easily visualized
+
+4.3 Finding the parameters
+-more in-depth discussion as to why the model fails
+-included how the parameter set was achieved
+-included the fitting function to the real and simulated applause
